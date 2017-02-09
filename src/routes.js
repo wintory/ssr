@@ -1,13 +1,19 @@
 import React from 'react'
 import { Route , IndexRoute} from 'react-router'
 
-import Page1 from './component/page1'
-import Page2 from './component/page2'
+import ProvinceDetail from './component/province_detail'
+import ActivityDetail from './component/activity_detail'
+import Home from './component/home'1
+import App from './component/app'
+import HomeDetail from './home_detail'
 
 export default (
-<Route>
-      <Route path="/" component={Page1}> </Route>
-     <Route path="page2" component={Page2} ></Route>
+<Route path="/" component={App}>
+      <Route path="home" component={Home}>
+        <Route path="home_detail" component={HomeDetail}></Route>
+        <Route path="province_detail" component={ProvinceDetail}> </Route>
+        <Route path="activity_detail" component={ActivityDetail} ></Route>
+      </Route>
 </Route>
 
 )
