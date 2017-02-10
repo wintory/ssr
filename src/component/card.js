@@ -6,11 +6,12 @@ export default class Card extends React.Component{
   render(){
     return(
     <div>
+
       <section id="portfolio" className="bg-light-gray">
         <div className="container">
+          <h2>{this.props.line}</h2>
             <div className="row">
                 <div className="col-lg-12 text-center">
-                    <h2 className="section-heading">Recommend Activity</h2>
 
                 </div>
             </div>

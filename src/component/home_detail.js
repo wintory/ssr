@@ -7,8 +7,8 @@ export default class HomeDetail extends Component{
   render(){
     return(
       <div>
-    
-      <Card />
+        <ProvCard />
+      <Card line="Activity Recommend"/>
       </div>
     )
   }

@@ -8452,7 +8452,8 @@ var HomeDetail = function (_Component) {
       return _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement(_card2.default, null)
+        _react2.default.createElement(_prov_card2.default, null),
+        _react2.default.createElement(_card2.default, { line: 'Activity Recommend' })
       );
     }
   }]);
@@ -8531,6 +8532,20 @@ var Nav = function (_React$Component) {
                             )
                         ),
                         _react2.default.createElement(
+                            'form',
+                            { className: 'navbar-form navbar-left', role: 'search' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'form-group' },
+                                _react2.default.createElement('input', { type: 'text', className: 'form-control', placeholder: 'Search' })
+                            ),
+                            _react2.default.createElement(
+                                'button',
+                                { type: 'submit', className: 'btn btn-default' },
+                                'search'
+                            )
+                        ),
+                        _react2.default.createElement(
                             'div',
                             { className: 'collapse navbar-collapse', id: 'bs-example-navbar-collapse-1' },
                             _react2.default.createElement(
@@ -8546,7 +8561,7 @@ var Nav = function (_React$Component) {
                                     null,
                                     _react2.default.createElement(
                                         _reactRouter.Link,
-                                        { to: '/login', href: '#contact' },
+                                        { to: '/login' },
                                         'Login'
                                     )
                                 )
@@ -12482,17 +12497,14 @@ var Card = function (_React$Component) {
                         'div',
                         { className: 'container' },
                         _react2.default.createElement(
+                            'h2',
+                            null,
+                            this.props.line
+                        ),
+                        _react2.default.createElement(
                             'div',
                             { className: 'row' },
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'col-lg-12 text-center' },
-                                _react2.default.createElement(
-                                    'h2',
-                                    { className: 'section-heading' },
-                                    'Recommend Activity'
-                                )
-                            )
+                            _react2.default.createElement('div', { className: 'col-lg-12 text-center' })
                         ),
                         _react2.default.createElement(
                             'div',
@@ -12883,7 +12895,7 @@ exports.default = Header;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -12903,30 +12915,140 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var ProvCard = function (_React$Component) {
-  _inherits(ProvCard, _React$Component);
+    _inherits(ProvCard, _React$Component);
 
-  function ProvCard() {
-    _classCallCheck(this, ProvCard);
+    function ProvCard() {
+        _classCallCheck(this, ProvCard);
 
-    return _possibleConstructorReturn(this, (ProvCard.__proto__ || Object.getPrototypeOf(ProvCard)).apply(this, arguments));
-  }
-
-  _createClass(ProvCard, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-          'div',
-          { className: 'prov_card' },
-          _react2.default.createElement('img', { className: 'prov_card', src: 'http://www.getnowapp.com/wp-content/uploads/2016/04/healthy-cooking.jpg' })
-        )
-      );
+        return _possibleConstructorReturn(this, (ProvCard.__proto__ || Object.getPrototypeOf(ProvCard)).apply(this, arguments));
     }
-  }]);
 
-  return ProvCard;
+    _createClass(ProvCard, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    'section',
+                    { id: 'portfolio', className: 'bg-light-gray' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'container' },
+                        _react2.default.createElement(
+                            'h2',
+                            null,
+                            'Most Province'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'row' },
+                            _react2.default.createElement(
+                                'table',
+                                null,
+                                _react2.default.createElement(
+                                    'tr',
+                                    null,
+                                    _react2.default.createElement(
+                                        'td',
+                                        null,
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'card' },
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'card-image' },
+                                                _react2.default.createElement('img', { className: 'img-responsive', src: 'http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7TDlCYzRROE84YWM/materialdesign_introduction.png' }),
+                                                _react2.default.createElement(
+                                                    'span',
+                                                    { className: 'card-title' },
+                                                    'Bangkok'
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'td',
+                                        null,
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'card' },
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'card-image' },
+                                                _react2.default.createElement('img', { className: 'img-responsive', src: 'http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7TDlCYzRROE84YWM/materialdesign_introduction.png' }),
+                                                _react2.default.createElement(
+                                                    'span',
+                                                    { className: 'card-title' },
+                                                    'Bangkok'
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'td',
+                                        null,
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'card' },
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'card-image' },
+                                                _react2.default.createElement('img', { className: 'img-responsive', src: 'http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7TDlCYzRROE84YWM/materialdesign_introduction.png' }),
+                                                _react2.default.createElement(
+                                                    'span',
+                                                    { className: 'card-title' },
+                                                    'Bangkok'
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'td',
+                                        null,
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'card' },
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'card-image' },
+                                                _react2.default.createElement('img', { className: 'img-responsive', src: 'http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7TDlCYzRROE84YWM/materialdesign_introduction.png' }),
+                                                _react2.default.createElement(
+                                                    'span',
+                                                    { className: 'card-title' },
+                                                    'Bangkok'
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'td',
+                                        null,
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'card' },
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'card-image' },
+                                                _react2.default.createElement('img', { className: 'img-responsive', src: 'http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7TDlCYzRROE84YWM/materialdesign_introduction.png' }),
+                                                _react2.default.createElement(
+                                                    'span',
+                                                    { className: 'card-title' },
+                                                    'Bangkok'
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return ProvCard;
 }(_react2.default.Component);
 
 exports.default = ProvCard;
