@@ -3,7 +3,7 @@ import {Link} from 'react-router'
 import Nav from './nav'
 import Header from './header'
 import Home from './home'
-
+import Footer from './footer'
 
 
 export default class App extends React.Component{
@@ -15,6 +15,7 @@ export default class App extends React.Component{
         <Header />
         <Home />
         {this.props.children}
+          <Footer />
       </div>
 
     )

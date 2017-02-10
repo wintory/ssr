@@ -8596,6 +8596,10 @@ var _card = __webpack_require__(73);
 
 var _card2 = _interopRequireDefault(_card);
 
+var _home_detail = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"home_detail\""); e.code = 'MODULE_NOT_FOUND';; throw e; }()));
+
+var _home_detail2 = _interopRequireDefault(_home_detail);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -8619,13 +8623,7 @@ var Home = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement(_prov_card2.default, null),
-        _react2.default.createElement(_card2.default, null),
-        _react2.default.createElement(_card2.default, null),
-        _react2.default.createElement(_card2.default, null),
-        _react2.default.createElement(_card2.default, null),
-        _react2.default.createElement(_card2.default, null),
-        _react2.default.createElement(_footer2.default, null)
+        _react2.default.createElement(_home_detail2.default, null)
       );
     }
   }]);
@@ -12538,7 +12536,8 @@ var App = function (_React$Component) {
         _react2.default.createElement(_nav2.default, null),
         _react2.default.createElement(_header2.default, null),
         _react2.default.createElement(_home2.default, null),
-        this.props.children
+        this.props.children,
+        _react2.default.createElement(Footer, null)
       );
     }
   }]);
@@ -12666,7 +12665,6 @@ var Header = function (_React$Component) {
                                         { className: 'name' },
                                         'Milestyle'
                                     ),
-                                    _react2.default.createElement('hr', { className: 'star-light' }),
                                     _react2.default.createElement(
                                         'span',
                                         { className: 'skills' },
