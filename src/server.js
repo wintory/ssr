@@ -12,6 +12,6 @@ app.engine('handlebars' , exphbs())
 app.set('view engine' , 'handlebars')
 app.set('views' , path.join(__dirname , './templete'))
 app.use(router)
-var server = app.listen(3000 , function(){
-  console.log('senior project running on port 3000')
+var server = app.listen(5000 , function(){
+  console.log('senior project running on port 5000')
 })

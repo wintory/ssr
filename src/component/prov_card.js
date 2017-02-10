@@ -4,9 +4,8 @@ import {Link} from 'react-router'
 export default class ProvCard extends React.Component{
   render(){
     return(
-      <div>
-        ProvCard
-      </div>
+    <div></div>
+
     )
   }
 }

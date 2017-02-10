@@ -10,6 +10,10 @@ export default class Home extends React.Component{
       <div>
         <ProvCard />
         <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
         <Footer />
       </div>
     )
