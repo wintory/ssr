@@ -6,15 +6,15 @@ div{
 }
 
 .card {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.16), 0 0px 0px 0 rgba(0, 0, 0, 0);
 }
 td{
   padding-left:  10px;
 }
 
 .card {
-    width:250px;
-    height:400px;
+    width:220px;
+    height:350px;
   margin-top: 10px;
   box-sizing: border-box;
   border-radius: 2px;

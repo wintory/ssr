@@ -288,6 +288,7 @@ header .intro-text .intro-heading {
   }
 }
 section {
+  margin-top: 1%;
   padding: 100px 0;
 }
 section h2.section-heading {
@@ -341,7 +342,7 @@ section h3.section-subheading {
   height: 20px;
   font-size: 20px;
   text-align: center;
-  top: 50%;
+  top: 10%;
   margin-top: -12px;
   color: white;
 }
@@ -357,7 +358,7 @@ section h3.section-subheading {
   margin: 0 auto;
   background-color: white;
   text-align: center;
-  padding: 25px;
+  padding: 5px;
 }
 #portfolio .portfolio-item .portfolio-caption h4 {
   text-transform: none;

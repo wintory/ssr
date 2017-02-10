@@ -43,7 +43,7 @@ export default class Card extends React.Component{
                     <div className="portfolio-caption">
                         <h4>Night Bar Club</h4>
                           <p className="text-muted">Bangkok</p>
-                          <p className="text-muted">1700 Baht</p>
+                          <p className="text-muted">1000 Baht</p>
                     </div>
                 </div>
                 <div className="col-md-4 col-sm-6 portfolio-item">
@@ -57,8 +57,8 @@ export default class Card extends React.Component{
                     </Link>
                     <div className="portfolio-caption">
                         <h4>Treehouse</h4>
-                        <p className="text-muted">Bangkok</p>
-                        <p className="text-muted">1700 Baht</p>
+                        <p className="text-muted">Pattaya</p>
+                        <p className="text-muted">2700 Baht</p>
                     </div>
                 </div>
                 <div className="col-md-4 col-sm-6 portfolio-item">
@@ -73,7 +73,7 @@ export default class Card extends React.Component{
                     <div className="portfolio-caption">
                         <h4>Chlef Training</h4>
                         <p className="text-muted">Bangkok</p>
-                        <p className="text-muted">1200 Bath</p>
+                        <p className="text-muted">4200 Bath</p>
                     </div>
                 </div>
                 <div className="col-md-4 col-sm-6 portfolio-item">
@@ -83,11 +83,12 @@ export default class Card extends React.Component{
                                 <i className="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/escape.png" className="img-responsive" alt=""/>
+                        <img src="http://cdn.snowkingmountain.com/wp-content/uploads/2015/10/couple-hiking-atop-snow-king-mountain-1024x683.jpg" className="img-responsive" alt=""/>
                     </Link>
                     <div className="portfolio-caption">
-                        <h4>Escape</h4>
-                        <p className="text-muted">Website Design</p>
+                        <h4>Hiking</h4>
+                          <p className="text-muted">ChiangMai</p>
+                          <p className="text-muted">8500 Bath</p>
                     </div>
                 </div>
                 <div className="col-md-4 col-sm-6 portfolio-item">
@@ -97,11 +98,12 @@ export default class Card extends React.Component{
                                 <i className="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/dreams.png" className="img-responsive" alt=""/>
+                        <img src="http://www.centarahotelsresorts.com/centara/ckc/images/uploads/gallery/full_size/koh-chang-activity-thai-boxing-2-640X457.jpg" className="img-responsive" alt=""/>
                     </Link>
                     <div className="portfolio-caption">
-                        <h4>Dreams</h4>
-                        <p className="text-muted">Website Design</p>
+                        <h4>Muay Thai</h4>
+                          <p className="text-muted">Bangkok</p>
+                          <p className="text-muted">3500 Bath</p>
                     </div>
                 </div>
             </div>

@@ -10,7 +10,7 @@ export default class Footer extends React.Component{
         <div className="container">
             <div className="row">
                 <div className="col-md-4">
-                    <span className="copyright">MileStyle Copyright &copy; Your Website 2017</span>
+                    <span className="copyright">MileStyle Copyright &copy; 2017</span>
                 </div>
 
             </div>
