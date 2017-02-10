@@ -5,18 +5,20 @@ export default class Header extends React.Component{
   render(){
     return(
       <div>
+        
         <header>
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-12">
-                        <div className="intro-text">
-                            <span className="name">Milestyle</span>
-                            <span className="skills">Activity Hobby Experience</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+
+          <div className="container">
+
+              <div className="intro-text">
+                  <div className="intro-lead-in">Welcome To Our Studio!</div>
+                  <div className="intro-heading">It's Nice To Meet You</div>
+                  <a href="#services" className="page-scroll btn btn-xl">Tell Me More</a>
+              </div>
+          </div>
+
+
+   </header>
 
       </div>
     )
