@@ -17,7 +17,7 @@ export default class Card extends React.Component{
             </div>
             <div className="row">
                 <div className="col-md-4 col-sm-6 portfolio-item">
-                    <Link to="activity_detail" className="portfolio-link" data-toggle="modal">
+                    <Link to="/activity_detail">
                         <div className="portfolio-hover">
                             <div className="portfolio-hover-content">
                                 <i className="fa fa-plus fa-3x"></i>
@@ -32,7 +32,7 @@ export default class Card extends React.Component{
                     </div>
                 </div>
                 <div className="col-md-4 col-sm-6 portfolio-item">
-                    <Link to="activity_detail" className="portfolio-link" data-toggle="modal">
+                    <Link to="/activity_detail">
                         <div className="portfolio-hover">
                             <div className="portfolio-hover-content">
                                 <i className="fa fa-plus fa-3x"></i>
@@ -47,7 +47,7 @@ export default class Card extends React.Component{
                     </div>
                 </div>
                 <div className="col-md-4 col-sm-6 portfolio-item">
-                    <Link to="activity_detail" className="portfolio-link" data-toggle="modal">
+                    <Link to="/activity_detail">
                         <div className="portfolio-hover">
                             <div className="portfolio-hover-content">
                                 <i className="fa fa-plus fa-3x"></i>
@@ -62,7 +62,7 @@ export default class Card extends React.Component{
                     </div>
                 </div>
                 <div className="col-md-4 col-sm-6 portfolio-item">
-                    <Link to="activity_detail" className="portfolio-link" data-toggle="modal">
+                    <Link to="activity_detail" >
                         <div className="portfolio-hover">
                             <div className="portfolio-hover-content">
                                 <i className="fa fa-plus fa-3x"></i>
@@ -77,7 +77,7 @@ export default class Card extends React.Component{
                     </div>
                 </div>
                 <div className="col-md-4 col-sm-6 portfolio-item">
-                    <Link to="activity_detail" className="portfolio-link" data-toggle="modal">
+                    <Link to="activity_detail" >
                         <div className="portfolio-hover">
                             <div className="portfolio-hover-content">
                                 <i className="fa fa-plus fa-3x"></i>
@@ -92,7 +92,7 @@ export default class Card extends React.Component{
                     </div>
                 </div>
                 <div className="col-md-4 col-sm-6 portfolio-item">
-                    <Link to="activity_detail" className="portfolio-link" data-toggle="modal">
+                    <Link to="activity_detail" >
                         <div className="portfolio-hover">
                             <div className="portfolio-hover-content">
                                 <i className="fa fa-plus fa-3x"></i>

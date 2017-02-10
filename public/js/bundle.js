@@ -13751,7 +13751,7 @@ var Card = function (_React$Component) {
                                 { className: 'col-md-4 col-sm-6 portfolio-item' },
                                 _react2.default.createElement(
                                     _reactRouter.Link,
-                                    { to: 'activity_detail', className: 'portfolio-link', 'data-toggle': 'modal' },
+                                    { to: '/activity_detail' },
                                     _react2.default.createElement(
                                         'div',
                                         { className: 'portfolio-hover' },
@@ -13788,7 +13788,7 @@ var Card = function (_React$Component) {
                                 { className: 'col-md-4 col-sm-6 portfolio-item' },
                                 _react2.default.createElement(
                                     _reactRouter.Link,
-                                    { to: 'activity_detail', className: 'portfolio-link', 'data-toggle': 'modal' },
+                                    { to: '/activity_detail' },
                                     _react2.default.createElement(
                                         'div',
                                         { className: 'portfolio-hover' },
@@ -13825,7 +13825,7 @@ var Card = function (_React$Component) {
                                 { className: 'col-md-4 col-sm-6 portfolio-item' },
                                 _react2.default.createElement(
                                     _reactRouter.Link,
-                                    { to: 'activity_detail', className: 'portfolio-link', 'data-toggle': 'modal' },
+                                    { to: '/activity_detail' },
                                     _react2.default.createElement(
                                         'div',
                                         { className: 'portfolio-hover' },
@@ -13862,7 +13862,7 @@ var Card = function (_React$Component) {
                                 { className: 'col-md-4 col-sm-6 portfolio-item' },
                                 _react2.default.createElement(
                                     _reactRouter.Link,
-                                    { to: 'activity_detail', className: 'portfolio-link', 'data-toggle': 'modal' },
+                                    { to: 'activity_detail' },
                                     _react2.default.createElement(
                                         'div',
                                         { className: 'portfolio-hover' },
@@ -13899,7 +13899,7 @@ var Card = function (_React$Component) {
                                 { className: 'col-md-4 col-sm-6 portfolio-item' },
                                 _react2.default.createElement(
                                     _reactRouter.Link,
-                                    { to: 'activity_detail', className: 'portfolio-link', 'data-toggle': 'modal' },
+                                    { to: 'activity_detail' },
                                     _react2.default.createElement(
                                         'div',
                                         { className: 'portfolio-hover' },
@@ -13936,7 +13936,7 @@ var Card = function (_React$Component) {
                                 { className: 'col-md-4 col-sm-6 portfolio-item' },
                                 _react2.default.createElement(
                                     _reactRouter.Link,
-                                    { to: 'activity_detail', className: 'portfolio-link', 'data-toggle': 'modal' },
+                                    { to: 'activity_detail' },
                                     _react2.default.createElement(
                                         'div',
                                         { className: 'portfolio-hover' },
@@ -14223,16 +14223,21 @@ var ProvCard = function (_React$Component) {
                                         'td',
                                         null,
                                         _react2.default.createElement(
-                                            'div',
-                                            { className: 'card' },
+                                            _reactRouter.Link,
+                                            { to: '/activity_detail' },
+                                            ' ',
                                             _react2.default.createElement(
                                                 'div',
-                                                { className: 'card-image' },
-                                                _react2.default.createElement('img', { className: 'img-responsive', src: 'http://www.artterracotta.com/images/img01.png' }),
+                                                { className: 'card' },
                                                 _react2.default.createElement(
-                                                    'span',
-                                                    { className: 'card-title' },
-                                                    'Chiang Mai'
+                                                    'div',
+                                                    { className: 'card-image' },
+                                                    _react2.default.createElement('img', { className: 'img-responsive', src: 'http://www.artterracotta.com/images/img01.png' }),
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'card-title' },
+                                                        'Chiang Mai'
+                                                    )
                                                 )
                                             )
                                         )
@@ -14241,16 +14246,21 @@ var ProvCard = function (_React$Component) {
                                         'td',
                                         null,
                                         _react2.default.createElement(
-                                            'div',
-                                            { className: 'card' },
+                                            _reactRouter.Link,
+                                            { to: '/activity_detail' },
+                                            '   ',
                                             _react2.default.createElement(
                                                 'div',
-                                                { className: 'card-image' },
-                                                _react2.default.createElement('img', { className: 'img-responsive', src: 'https://images.trvl-media.com/hotels/2000000/1850000/1849100/1849012/1849012_130_b.jpg' }),
+                                                { className: 'card' },
                                                 _react2.default.createElement(
-                                                    'span',
-                                                    { className: 'card-title' },
-                                                    'Pattaya'
+                                                    'div',
+                                                    { className: 'card-image' },
+                                                    _react2.default.createElement('img', { className: 'img-responsive', src: 'https://images.trvl-media.com/hotels/2000000/1850000/1849100/1849012/1849012_130_b.jpg' }),
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'card-title' },
+                                                        'Pattaya'
+                                                    )
                                                 )
                                             )
                                         )
@@ -14259,16 +14269,21 @@ var ProvCard = function (_React$Component) {
                                         'td',
                                         null,
                                         _react2.default.createElement(
-                                            'div',
-                                            { className: 'card' },
+                                            _reactRouter.Link,
+                                            { to: '/activity_detail' },
+                                            ' ',
                                             _react2.default.createElement(
                                                 'div',
-                                                { className: 'card-image' },
-                                                _react2.default.createElement('img', { className: 'img-responsive', src: 'https://media.expedia.com/hotels/1000000/530000/527800/527737/527737_17_b.jpg' }),
+                                                { className: 'card' },
                                                 _react2.default.createElement(
-                                                    'span',
-                                                    { className: 'card-title' },
-                                                    'Phuket'
+                                                    'div',
+                                                    { className: 'card-image' },
+                                                    _react2.default.createElement('img', { className: 'img-responsive', src: 'https://media.expedia.com/hotels/1000000/530000/527800/527737/527737_17_b.jpg' }),
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'card-title' },
+                                                        'Phuket'
+                                                    )
                                                 )
                                             )
                                         )
@@ -14277,16 +14292,21 @@ var ProvCard = function (_React$Component) {
                                         'td',
                                         null,
                                         _react2.default.createElement(
-                                            'div',
-                                            { className: 'card' },
+                                            _reactRouter.Link,
+                                            { to: '/activity_detail' },
+                                            '   ',
                                             _react2.default.createElement(
                                                 'div',
-                                                { className: 'card-image' },
-                                                _react2.default.createElement('img', { className: 'img-responsive', src: 'https://yooniqimages.blob.core.windows.net/yooniqimages-data-storage-resizedimagefilerepository/List/20957/dfdbfc19-d3ae-4e61-b113-7051115ecb99/YooniqImages_209579897.jpg' }),
+                                                { className: 'card' },
                                                 _react2.default.createElement(
-                                                    'span',
-                                                    { className: 'card-title' },
-                                                    'Ayutthaya'
+                                                    'div',
+                                                    { className: 'card-image' },
+                                                    _react2.default.createElement('img', { className: 'img-responsive', src: 'https://yooniqimages.blob.core.windows.net/yooniqimages-data-storage-resizedimagefilerepository/List/20957/dfdbfc19-d3ae-4e61-b113-7051115ecb99/YooniqImages_209579897.jpg' }),
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'card-title' },
+                                                        'Ayutthaya'
+                                                    )
                                                 )
                                             )
                                         )
