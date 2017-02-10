@@ -98,7 +98,7 @@ export default class Card extends React.Component{
                                 <i className="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="http://www.centarahotelsresorts.com/centara/ckc/images/uploads/gallery/full_size/koh-chang-activity-thai-boxing-2-640X457.jpg" className="img-responsive" alt=""/>
+                        <img src="http://www.tigermuaythai.com/wp-core/wp-content/uploads/2008/10/muay-thai-for-everyone-1.jpg" className="img-responsive" alt=""/>
                     </Link>
                     <div className="portfolio-caption">
                         <h4>Muay Thai</h4>

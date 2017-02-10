@@ -9406,7 +9406,7 @@ exports.default = HomeDetail;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -9426,89 +9426,209 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Nav = function (_React$Component) {
-    _inherits(Nav, _React$Component);
+  _inherits(Nav, _React$Component);
 
-    function Nav() {
-        _classCallCheck(this, Nav);
+  function Nav() {
+    _classCallCheck(this, Nav);
 
-        return _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).apply(this, arguments));
-    }
+    return _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).apply(this, arguments));
+  }
 
-    _createClass(Nav, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                null,
+  _createClass(Nav, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'nav',
+          { id: 'mainNav', className: 'navbar navbar-default navbar-custom navbar-fixed-top' },
+          _react2.default.createElement(
+            'div',
+            { className: 'container' },
+            _react2.default.createElement(
+              'div',
+              { className: 'navbar-header page-scroll' },
+              _react2.default.createElement(
+                'button',
+                { type: 'button', className: 'navbar-toggle', 'data-toggle': 'collapse', 'data-target': '#bs-example-navbar-collapse-1' },
                 _react2.default.createElement(
-                    'nav',
-                    { id: 'mainNav', className: 'navbar navbar-default navbar-custom navbar-fixed-top' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'container' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'navbar-header page-scroll' },
-                            _react2.default.createElement(
-                                'button',
-                                { type: 'button', className: 'navbar-toggle', 'data-toggle': 'collapse', 'data-target': '#bs-example-navbar-collapse-1' },
-                                _react2.default.createElement(
-                                    'span',
-                                    { className: 'sr-only' },
-                                    'Toggle navigation'
-                                ),
-                                ' Menu ',
-                                _react2.default.createElement('i', { className: 'fa fa-bars' })
-                            ),
-                            _react2.default.createElement(
-                                'a',
-                                { className: 'navbar-brand page-scroll', href: '#page-top' },
-                                'MileStyle'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'form',
-                            { className: 'navbar-form navbar-left', role: 'search' },
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'form-group' },
-                                _react2.default.createElement('input', { type: 'text', className: 'form-control', placeholder: 'Search' })
-                            ),
-                            _react2.default.createElement(
-                                'button',
-                                { type: 'submit', className: 'btn btn-default' },
-                                'search'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'collapse navbar-collapse', id: 'bs-example-navbar-collapse-1' },
-                            _react2.default.createElement(
-                                'ul',
-                                { className: 'nav navbar-nav navbar-right' },
-                                _react2.default.createElement(
-                                    'li',
-                                    { className: 'hidden' },
-                                    _react2.default.createElement('a', { href: '#page-top' })
-                                ),
-                                _react2.default.createElement(
-                                    'li',
-                                    null,
-                                    _react2.default.createElement(
-                                        _reactRouter.Link,
-                                        { to: '/login' },
-                                        'Login'
-                                    )
-                                )
-                            )
-                        )
-                    )
+                  'span',
+                  { className: 'sr-only' },
+                  'Toggle navigation'
+                ),
+                ' Menu ',
+                _react2.default.createElement('i', { className: 'fa fa-bars' })
+              ),
+              _react2.default.createElement(
+                'a',
+                { className: 'navbar-brand page-scroll', href: '#page-top' },
+                'MileStyle'
+              )
+            ),
+            _react2.default.createElement(
+              'form',
+              { className: 'navbar-form navbar-left', role: 'search' },
+              _react2.default.createElement(
+                'div',
+                { className: 'form-group' },
+                _react2.default.createElement('input', { type: 'text', className: 'form-control', placeholder: 'Search' })
+              ),
+              _react2.default.createElement(
+                'button',
+                { type: 'submit', className: 'btn btn-default' },
+                'search'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'collapse navbar-collapse', id: 'bs-example-navbar-collapse-1' },
+              _react2.default.createElement(
+                'ul',
+                { className: 'nav navbar-nav navbar-right' },
+                _react2.default.createElement(
+                  'li',
+                  { className: 'hidden' },
+                  _react2.default.createElement(
+                    _reactRouter.Link,
+                    { to: '*' },
+                    'Login'
+                  )
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  _react2.default.createElement(
+                    _reactRouter.Link,
+                    { to: '*' },
+                    'Home'
+                  )
+                ),
+                _react2.default.createElement(
+                  'li',
+                  { 'data-toggle': 'modal', 'data-target': '#myModal' },
+                  _react2.default.createElement(
+                    _reactRouter.Link,
+                    { to: 'login' },
+                    'Login'
+                  )
                 )
-            );
-        }
-    }]);
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'modal fade', id: 'myModal', tabindex: '-1', role: 'dialog', 'aria-labelledby': 'myModalLabel' },
+          _react2.default.createElement(
+            'div',
+            { className: 'modal-dialog', role: 'document' },
+            _react2.default.createElement(
+              'div',
+              { className: 'modal-content' },
+              _react2.default.createElement(
+                'div',
+                { className: 'modal-header' },
+                _react2.default.createElement(
+                  'button',
+                  { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-label': 'Close' },
+                  _react2.default.createElement(
+                    'span',
+                    { 'aria-hidden': 'true' },
+                    '\xD7'
+                  )
+                ),
+                _react2.default.createElement(
+                  'h4',
+                  { className: 'modal-title', id: 'myModalLabel' },
+                  'Login'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'modal-body' },
+                _react2.default.createElement(
+                  'a',
+                  { className: 'btn btn-block btn-social btn-lg btn-facebook' },
+                  _react2.default.createElement('span', { className: 'fa fa-facebook' }),
+                  ' Sign in with Facebook'
+                ),
+                _react2.default.createElement(
+                  'a',
+                  { className: 'btn btn-block btn-social btn-lg btn-google' },
+                  _react2.default.createElement('span', { className: 'fa fa-google' }),
+                  ' Sign in with Google+'
+                ),
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  '\xA0\xA0'
+                ),
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  '\xA0\xA0'
+                ),
+                _react2.default.createElement(
+                  'form',
+                  null,
+                  _react2.default.createElement(
+                    'fieldset',
+                    null,
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'form-group' },
+                      _react2.default.createElement(
+                        'label',
+                        null,
+                        'Email'
+                      ),
+                      _react2.default.createElement('input', { type: 'text', className: 'form-control' })
+                    ),
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'form-group' },
+                      _react2.default.createElement(
+                        'label',
+                        null,
+                        'Password'
+                      ),
+                      _react2.default.createElement('input', { type: 'password', className: 'form-control' })
+                    ),
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'form-group' },
+                      _react2.default.createElement(
+                        'button',
+                        { type: 'button', className: 'btn btn-default' },
+                        'Register'
+                      ),
+                      _react2.default.createElement(
+                        'button',
+                        { type: 'submit', className: 'btn btn-default' },
+                        'Submit'
+                      )
+                    )
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'modal-footer' },
+                _react2.default.createElement(
+                  'button',
+                  { type: 'button', className: 'btn btn-primary', 'data-dismiss': 'modal' },
+                  'Close'
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
 
-    return Nav;
+  return Nav;
 }(_react2.default.Component);
 
 exports.default = Nav;
@@ -13409,14 +13529,16 @@ exports.default = _react2.default.createElement(
   _react2.default.createElement(
     _reactRouter.Route,
     { path: 'home', component: _home2.default },
-    _react2.default.createElement(_reactRouter.Route, { path: 'home_detail', component: _home_detail2.default }),
-    _react2.default.createElement(
-      _reactRouter.Route,
-      { path: 'province_detail', component: _province_detail2.default },
-      ' '
-    ),
-    _react2.default.createElement(_reactRouter.Route, { path: 'activity_detail', component: _activity_detail2.default })
-  )
+    ' '
+  ),
+  _react2.default.createElement(_reactRouter.Route, { path: 'home_detail', component: _home_detail2.default }),
+  _react2.default.createElement(
+    _reactRouter.Route,
+    { path: 'province_detail', component: _province_detail2.default },
+    ' '
+  ),
+  _react2.default.createElement(_reactRouter.Route, { path: 'activity_detail', component: _activity_detail2.default }),
+  _react2.default.createElement(_reactRouter.Route, { path: '*', component: _home_detail2.default })
 );
 
 /***/ }),
@@ -13552,7 +13674,6 @@ var App = function (_React$Component) {
         null,
         _react2.default.createElement('img', { src: 'https://www.familytour.co.il/wp-content/uploads/2017/01/grand-palace-1822487_1920-1500x500.jpg' }),
         _react2.default.createElement(_nav2.default, null),
-        _react2.default.createElement(_home2.default, null),
         this.props.children,
         _react2.default.createElement(_footer2.default, null)
       );
@@ -13825,7 +13946,7 @@ var Card = function (_React$Component) {
                                             _react2.default.createElement('i', { className: 'fa fa-plus fa-3x' })
                                         )
                                     ),
-                                    _react2.default.createElement('img', { src: 'http://www.centarahotelsresorts.com/centara/ckc/images/uploads/gallery/full_size/koh-chang-activity-thai-boxing-2-640X457.jpg', className: 'img-responsive', alt: '' })
+                                    _react2.default.createElement('img', { src: 'http://www.tigermuaythai.com/wp-core/wp-content/uploads/2008/10/muay-thai-for-everyone-1.jpg', className: 'img-responsive', alt: '' })
                                 ),
                                 _react2.default.createElement(
                                     'div',
@@ -14079,16 +14200,21 @@ var ProvCard = function (_React$Component) {
                                         'td',
                                         null,
                                         _react2.default.createElement(
-                                            'div',
-                                            { className: 'card' },
+                                            _reactRouter.Link,
+                                            { to: '/activity_detail' },
+                                            '  ',
                                             _react2.default.createElement(
                                                 'div',
-                                                { className: 'card-image' },
-                                                _react2.default.createElement('img', { className: 'img-responsive', src: 'http://www.sawasdee-hotels.com/pattaya/siam_sawasdee/images/hotel.jpg' }),
+                                                { className: 'card' },
                                                 _react2.default.createElement(
-                                                    'span',
-                                                    { className: 'card-title' },
-                                                    'Bangkok'
+                                                    'div',
+                                                    { className: 'card-image' },
+                                                    _react2.default.createElement('img', { className: 'img-responsive', src: 'http://www.sawasdee-hotels.com/pattaya/siam_sawasdee/images/hotel.jpg' }),
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'card-title' },
+                                                        'Bangkok'
+                                                    )
                                                 )
                                             )
                                         )

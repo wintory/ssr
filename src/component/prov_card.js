@@ -14,13 +14,13 @@ export default class ProvCard extends React.Component{
             <tr>
 
               <td>
-                <div className="card">
+              <Link to="/activity_detail">  <div className="card">
                     <div className="card-image">
                         <img className="img-responsive" src="http://www.sawasdee-hotels.com/pattaya/siam_sawasdee/images/hotel.jpg"/>
                         <span className="card-title">Bangkok</span>
                     </div>
                 </div>
-
+                </Link>
               </td>
               <td>
                 <div className="card">
