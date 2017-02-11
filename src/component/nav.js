@@ -10,7 +10,7 @@ export default class Nav extends React.Component{
   render(){
     return (
       <div>
-        <nav id="mainNav" className="navbar navbar-default navbar-custom navbar-fixed-top">
+        <nav id="mainNav" className=" navbar navbar-default navbar-custom navbar-fixed-top">
 
         <div className="container">
 
@@ -18,9 +18,9 @@ export default class Nav extends React.Component{
                 <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span className="sr-only">Toggle navigation</span> Menu <i className="fa fa-bars"></i>
                 </button>
-                <a className="navbar-brand page-scroll" href="#page-top">MileStyle</a>
+                <Link to="home" className="navbar-brand page-scroll" >MileStyle</Link>
             </div>
-<form className="navbar-form navbar-left" role="search">
+<form className="col-md-8 navbar-form navbar-left" role="search">
             <div className="form-group">
    <input type="text" className="form-control"  placeholder="Search"/>
  </div>
@@ -32,10 +32,10 @@ export default class Nav extends React.Component{
                         <Link to="*">Login</Link>
                     </li>
                     <li>
-                    <Link to="*">Home</Link>
+                    <Link to="home">Home</Link>
                     </li>
                     <li data-toggle="modal" data-target="#myModal">
-                        <Link to="login">Login</Link>
+                        <Link to="">Login</Link>
                     </li>
                 </ul>
             </div>

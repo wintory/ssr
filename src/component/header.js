@@ -5,21 +5,51 @@ export default class Header extends React.Component{
   render(){
     return(
       <div>
-        
         <header>
+        <div className="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+    <div className="overlay"></div>
 
-          <div className="container">
-
-              <div className="intro-text">
-                  <div className="intro-lead-in">Welcome To Our Studio!</div>
-                  <div className="intro-heading">It's Nice To Meet You</div>
-                  <a href="#services" className="page-scroll btn btn-xl">Tell Me More</a>
-              </div>
-          </div>
+    <ol className="carousel-indicators">
+      <li data-target="#bs-carousel" data-slide-to="0" className="active"></li>
+      <li data-target="#bs-carousel" data-slide-to="1"></li>
+      <li data-target="#bs-carousel" data-slide-to="2"></li>
+    </ol>
 
 
-   </header>
-
+    <div className="carousel-inner">
+      <div className="item slides active">
+        <div className="slide-1"></div>
+        <div className="hero">
+          <hgroup>
+              <h1>Milestyle</h1>
+              <h3>Activity Hobby Experience</h3>
+          </hgroup>
+          <button className="btn btn-hero btn-lg" role="button">See all Activity</button>
+        </div>
+      </div>
+      <div className="item slides">
+        <div className="slide-2"></div>
+        <div className="hero">
+          <hgroup>
+            <h1>Milestyle</h1>
+            <h3>Activity Hobby Experience</h3>
+          </hgroup>
+          <button className="btn btn-hero btn-lg" role="button">See all Activity</button>
+        </div>
+      </div>
+      <div className="item slides">
+        <div className="slide-3"></div>
+        <div className="hero">
+          <hgroup>
+            <h1>Milestyle</h1>
+            <h3>Activity Hobby Experience</h3>
+          </hgroup>
+        <button className="btn btn-hero btn-lg" role="button">See all Activity</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
       </div>
     )
   }

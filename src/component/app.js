@@ -11,8 +11,9 @@ export default class App extends React.Component{
   render(){
     return(
       <div>
-          <img src="https://www.familytour.co.il/wp-content/uploads/2017/01/grand-palace-1822487_1920-1500x500.jpg"/>
+          <Header/>
         <Nav />
+
         {this.props.children}
           <Footer />
 
