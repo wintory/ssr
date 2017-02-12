@@ -5,51 +5,29 @@ export default class Header extends React.Component{
   render(){
     return(
       <div>
-        <header>
-        <div className="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-    <div className="overlay"></div>
+        <div id="carousel" className="carousel slide carousel-fade" data-ride="carousel">
+      <ol className="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" className="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+      </ol>
 
-    <ol className="carousel-indicators">
-      <li data-target="#bs-carousel" data-slide-to="0" className="active"></li>
-      <li data-target="#bs-carousel" data-slide-to="1"></li>
-      <li data-target="#bs-carousel" data-slide-to="2"></li>
-    </ol>
+      <div className="carousel-inner">
+          <div className="active item"><img src="http://www.baankrupu.com/wp-content/uploads/2015/12/ampawa1.jpg"/></div>
+          <div className="item"><img src="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAiXAAAAJDE4MDc2MGY3LTZhM2QtNDI3Zi04YmQzLThlMWIxOTNkZjIwNg.jpg"/></div>
+          <div className="item"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Bangkok_skytrain_sunset.jpg"/></div>
+      </div>
 
-
-    <div className="carousel-inner">
-      <div className="item slides active">
-        <div className="slide-1"></div>
-        <div className="hero">
-          <hgroup>
-              <h1>Milestyle</h1>
-              <h3>Activity Hobby Experience</h3>
-          </hgroup>
-          <button className="btn btn-hero btn-lg" role="button">See all Activity</button>
-        </div>
-      </div>
-      <div className="item slides">
-        <div className="slide-2"></div>
-        <div className="hero">
-          <hgroup>
-            <h1>Milestyle</h1>
-            <h3>Activity Hobby Experience</h3>
-          </hgroup>
-          <button className="btn btn-hero btn-lg" role="button">See all Activity</button>
-        </div>
-      </div>
-      <div className="item slides">
-        <div className="slide-3"></div>
-        <div className="hero">
-          <hgroup>
-            <h1>Milestyle</h1>
-            <h3>Activity Hobby Experience</h3>
-          </hgroup>
-        <button className="btn btn-hero btn-lg" role="button">See all Activity</button>
-        </div>
-      </div>
-    </div>
+      <a className="carousel-control left" href="#carousel" data-slide="prev"></a>
+      <a className="carousel-control right" href="#carousel" data-slide="next"></a>
   </div>
-</header>
+  <div className="hero">
+    <hgroup>
+      <h1>Milestyle</h1>
+      <h3>Activity Hobby Experience</h3>
+    </hgroup>
+    <a className="page-scroll" href="#portfolio"><button className="btn btn-hero btn-lg" role="button">See all Activity</button></a>
+  </div>
       </div>
     )
   }

@@ -6,8 +6,7 @@ import Comment from './comment'
 class ActivityDetail extends React.Component {
     render() {
         return (
-            <div>
-                <section id="portfolio" className="bg-light-gray">
+            <div className="marg">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
@@ -20,7 +19,7 @@ class ActivityDetail extends React.Component {
                                     <div className="row">
                                         <div className="col-md-6">
                                             <ActivityDetailCard/>
-                                            <Comment/>
+
                                         </div>
                                         <div className="col-md-3 margin">
                                             <div className="form-group">
@@ -38,7 +37,6 @@ class ActivityDetail extends React.Component {
                             </div>
                         </div>
                     </div>
-                </section>
 
                 <Card line="Recommend"/>
                 <Link to="province_detail">go page prov</Link>

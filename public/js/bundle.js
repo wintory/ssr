@@ -5911,7 +5911,7 @@ var Card = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                     'section',
-                    { id: 'portfolio', className: 'bg-light-gray' },
+                    { id: 'portfolio' },
                     _react2.default.createElement(
                         'div',
                         { className: 'container' },
@@ -5919,6 +5919,11 @@ var Card = function (_React$Component) {
                             'h2',
                             null,
                             this.props.line
+                        ),
+                        _react2.default.createElement(
+                            'h3',
+                            null,
+                            this.props.detail
                         ),
                         _react2.default.createElement(
                             'div',
@@ -6128,7 +6133,7 @@ var Card = function (_React$Component) {
                                             _react2.default.createElement('i', { className: 'fa fa-plus fa-3x' })
                                         )
                                     ),
-                                    _react2.default.createElement('img', { src: 'http://www.tigermuaythai.com/wp-core/wp-content/uploads/2008/10/muay-thai-for-everyone-1.jpg', className: 'img-responsive', alt: '' })
+                                    _react2.default.createElement('img', { src: 'http://muaythaicampsthailand.com/wp-content/uploads/2012/12/tiger-muay-thai.jpg', className: 'img-responsive', alt: '' })
                                 ),
                                 _react2.default.createElement(
                                     'div',
@@ -9683,7 +9688,7 @@ var HomeDetail = function (_Component) {
         'div',
         null,
         _react2.default.createElement(_prov_card2.default, null),
-        _react2.default.createElement(_card2.default, { line: 'Activity Recommend' })
+        _react2.default.createElement(_card2.default, { line: 'Activity Recommend', detail: 'THESE ARE OUR FAVOURITE & MOST POPULAR PROVINCE THAT YOU SHOULDN\u2019T MISS WHILE IN THAILAND!' })
       );
     }
   }]);
@@ -9736,184 +9741,190 @@ var Nav = function (_React$Component) {
         'div',
         null,
         _react2.default.createElement(
-          'nav',
-          { id: 'mainNav', className: ' navbar navbar-default navbar-custom navbar-fixed-top' },
+          'section',
+          { id: 'portfolio' },
           _react2.default.createElement(
-            'div',
-            { className: 'container' },
+            'nav',
+            { id: 'mainNav', className: ' navbar navbar-default navbar-custom navbar-fixed-top' },
             _react2.default.createElement(
               'div',
-              { className: 'navbar-header page-scroll' },
-              _react2.default.createElement(
-                'button',
-                { type: 'button', className: 'navbar-toggle', 'data-toggle': 'collapse', 'data-target': '#bs-example-navbar-collapse-1' },
-                _react2.default.createElement(
-                  'span',
-                  { className: 'sr-only' },
-                  'Toggle navigation'
-                ),
-                ' Menu ',
-                _react2.default.createElement('i', { className: 'fa fa-bars' })
-              ),
-              _react2.default.createElement(
-                _reactRouter.Link,
-                { to: 'home', className: 'navbar-brand page-scroll' },
-                'MileStyle'
-              )
-            ),
-            _react2.default.createElement(
-              'form',
-              { className: 'col-md-8 navbar-form navbar-left', role: 'search' },
+              { className: 'container' },
               _react2.default.createElement(
                 'div',
-                { className: 'form-group' },
-                _react2.default.createElement('input', { type: 'text', className: 'form-control', placeholder: 'Search' })
+                { className: 'navbar-header page-scroll' },
+                _react2.default.createElement(
+                  'button',
+                  { type: 'button', className: 'navbar-toggle', 'data-toggle': 'collapse', 'data-target': '#bs-example-navbar-collapse-1' },
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'sr-only' },
+                    'Toggle navigation'
+                  ),
+                  ' Menu ',
+                  _react2.default.createElement('i', { className: 'fa fa-bars' })
+                ),
+                _react2.default.createElement(
+                  _reactRouter.Link,
+                  { to: 'home', className: 'navbar-brand page-scroll' },
+                  'MileStyle'
+                )
               ),
               _react2.default.createElement(
-                'button',
-                { type: 'submit', className: 'btn btn-default' },
-                'search'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'collapse navbar-collapse', id: 'bs-example-navbar-collapse-1' },
+                'form',
+                { className: 'col-md-1 navbar-form navbar-left', role: 'search' },
+                ' ',
+                _react2.default.createElement(
+                  'div',
+                  { className: 'form-group' },
+                  _react2.default.createElement('input', { type: 'text', className: 'form-control', placeholder: 'Search' })
+                ),
+                ' ',
+                _react2.default.createElement(
+                  'button',
+                  { type: 'submit', className: 'btn btn-default' },
+                  ' search '
+                )
+              ),
               _react2.default.createElement(
-                'ul',
-                { className: 'nav navbar-nav navbar-right' },
+                'div',
+                { className: 'collapse navbar-collapse', id: 'bs-example-navbar-collapse-1' },
                 _react2.default.createElement(
-                  'li',
-                  { className: 'hidden' },
+                  'ul',
+                  { className: 'nav navbar-nav navbar-right' },
                   _react2.default.createElement(
-                    _reactRouter.Link,
-                    { to: '*' },
-                    'Login'
-                  )
-                ),
-                _react2.default.createElement(
-                  'li',
-                  null,
+                    'li',
+                    { className: 'hidden' },
+                    _react2.default.createElement(
+                      _reactRouter.Link,
+                      { to: '*' },
+                      'Login'
+                    )
+                  ),
                   _react2.default.createElement(
-                    _reactRouter.Link,
-                    { to: 'home' },
-                    'Home'
-                  )
-                ),
-                _react2.default.createElement(
-                  'li',
-                  { 'data-toggle': 'modal', 'data-target': '#myModal' },
+                    'li',
+                    null,
+                    _react2.default.createElement(
+                      _reactRouter.Link,
+                      { to: 'home' },
+                      'Home'
+                    )
+                  ),
                   _react2.default.createElement(
-                    _reactRouter.Link,
-                    { to: '' },
-                    'Login'
+                    'li',
+                    { 'data-toggle': 'modal', 'data-target': '#myModal' },
+                    _react2.default.createElement(
+                      _reactRouter.Link,
+                      { to: '' },
+                      'Login'
+                    )
                   )
                 )
               )
             )
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'modal fade', id: 'myModal', tabindex: '-1', role: 'dialog', 'aria-labelledby': 'myModalLabel' },
+          ),
           _react2.default.createElement(
             'div',
-            { className: 'modal-dialog', role: 'document' },
+            { className: 'modal fade', id: 'myModal', tabindex: '-1', role: 'dialog', 'aria-labelledby': 'myModalLabel' },
             _react2.default.createElement(
               'div',
-              { className: 'modal-content' },
+              { className: 'modal-dialog', role: 'document' },
               _react2.default.createElement(
                 'div',
-                { className: 'modal-header' },
+                { className: 'modal-content' },
                 _react2.default.createElement(
-                  'button',
-                  { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-label': 'Close' },
+                  'div',
+                  { className: 'modal-header' },
                   _react2.default.createElement(
-                    'span',
-                    { 'aria-hidden': 'true' },
-                    '\xD7'
+                    'button',
+                    { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-label': 'Close' },
+                    _react2.default.createElement(
+                      'span',
+                      { 'aria-hidden': 'true' },
+                      '\xD7'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'h4',
+                    { className: 'modal-title', id: 'myModalLabel' },
+                    'Login'
                   )
                 ),
                 _react2.default.createElement(
-                  'h4',
-                  { className: 'modal-title', id: 'myModalLabel' },
-                  'Login'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'modal-body' },
-                _react2.default.createElement(
-                  'a',
-                  { className: 'btn btn-block btn-social btn-lg btn-facebook' },
-                  _react2.default.createElement('span', { className: 'fa fa-facebook' }),
-                  ' Sign in with Facebook'
-                ),
-                _react2.default.createElement(
-                  'a',
-                  { className: 'btn btn-block btn-social btn-lg btn-google' },
-                  _react2.default.createElement('span', { className: 'fa fa-google' }),
-                  ' Sign in with Google+'
-                ),
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  '\xA0\xA0'
-                ),
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  '\xA0\xA0'
-                ),
-                _react2.default.createElement(
-                  'form',
-                  null,
+                  'div',
+                  { className: 'modal-body' },
                   _react2.default.createElement(
-                    'fieldset',
+                    'a',
+                    { className: 'btn btn-block btn-social btn-lg btn-facebook' },
+                    _react2.default.createElement('span', { className: 'fa fa-facebook' }),
+                    ' Sign in with Facebook'
+                  ),
+                  _react2.default.createElement(
+                    'a',
+                    { className: 'btn btn-block btn-social btn-lg btn-google' },
+                    _react2.default.createElement('span', { className: 'fa fa-google' }),
+                    ' Sign in with Google+'
+                  ),
+                  _react2.default.createElement(
+                    'span',
+                    null,
+                    '\xA0\xA0'
+                  ),
+                  _react2.default.createElement(
+                    'span',
+                    null,
+                    '\xA0\xA0'
+                  ),
+                  _react2.default.createElement(
+                    'form',
                     null,
                     _react2.default.createElement(
-                      'div',
-                      { className: 'form-group' },
+                      'fieldset',
+                      null,
                       _react2.default.createElement(
-                        'label',
-                        null,
-                        'Email'
-                      ),
-                      _react2.default.createElement('input', { type: 'text', className: 'form-control' })
-                    ),
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'form-group' },
-                      _react2.default.createElement(
-                        'label',
-                        null,
-                        'Password'
-                      ),
-                      _react2.default.createElement('input', { type: 'password', className: 'form-control' })
-                    ),
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'form-group' },
-                      _react2.default.createElement(
-                        'button',
-                        { type: 'button', className: 'btn btn-default' },
-                        'Register'
+                        'div',
+                        { className: 'form-group' },
+                        _react2.default.createElement(
+                          'label',
+                          null,
+                          'Email'
+                        ),
+                        _react2.default.createElement('input', { type: 'text', className: 'form-control' })
                       ),
                       _react2.default.createElement(
-                        'button',
-                        { type: 'submit', className: 'btn btn-default' },
-                        'Submit'
+                        'div',
+                        { className: 'form-group' },
+                        _react2.default.createElement(
+                          'label',
+                          null,
+                          'Password'
+                        ),
+                        _react2.default.createElement('input', { type: 'password', className: 'form-control' })
+                      ),
+                      _react2.default.createElement(
+                        'div',
+                        { className: 'form-group' },
+                        _react2.default.createElement(
+                          'button',
+                          { type: 'button', className: 'btn btn-default' },
+                          'Register'
+                        ),
+                        _react2.default.createElement(
+                          'button',
+                          { type: 'submit', className: 'btn btn-default' },
+                          'Submit'
+                        )
                       )
                     )
                   )
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'modal-footer' },
+                ),
                 _react2.default.createElement(
-                  'button',
-                  { type: 'button', className: 'btn btn-primary', 'data-dismiss': 'modal' },
-                  'Close'
+                  'div',
+                  { className: 'modal-footer' },
+                  _react2.default.createElement(
+                    'button',
+                    { type: 'button', className: 'btn btn-primary', 'data-dismiss': 'modal' },
+                    'Close'
+                  )
                 )
               )
             )
@@ -13821,19 +13832,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _react2.default.createElement(
   _reactRouter.Route,
   { path: '/', component: _app2.default },
-  _react2.default.createElement(
-    _reactRouter.Route,
-    { path: 'home', component: _home2.default },
-    ' '
-  ),
-  _react2.default.createElement(_reactRouter.Route, { path: 'home_detail', component: _home_detail2.default }),
+  _react2.default.createElement(_reactRouter.IndexRoute, { component: _home2.default }),
   _react2.default.createElement(
     _reactRouter.Route,
     { path: 'province_detail', component: _province_detail2.default },
     ' '
   ),
   _react2.default.createElement(_reactRouter.Route, { path: 'activity_detail', component: _activity_detail2.default }),
-  _react2.default.createElement(_reactRouter.Route, { path: '*', component: _home_detail2.default })
+  _react2.default.createElement(_reactRouter.Route, { path: '*', component: _home2.default })
 );
 
 /***/ }),
@@ -13899,62 +13905,57 @@ var ActivityDetail = function (_React$Component) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                null,
+                { className: 'marg' },
                 _react2.default.createElement(
-                    'section',
-                    { id: 'portfolio', className: 'bg-light-gray' },
+                    'div',
+                    { className: 'container' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'container' },
+                        { className: 'row' },
                         _react2.default.createElement(
                             'div',
-                            { className: 'row' },
+                            { className: 'col-lg-12 text-center' },
                             _react2.default.createElement(
-                                'div',
-                                { className: 'col-lg-12 text-center' },
-                                _react2.default.createElement(
-                                    'h2',
-                                    { className: 'section-heading' },
-                                    'Activity Detail'
-                                )
+                                'h2',
+                                { className: 'section-heading' },
+                                'Activity Detail'
                             )
-                        ),
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'row' },
                         _react2.default.createElement(
                             'div',
-                            { className: 'row' },
+                            { className: 'col-lg-12' },
                             _react2.default.createElement(
-                                'div',
-                                { className: 'col-lg-12' },
+                                'form',
+                                { name: 'sentMessage', id: 'contactForm', novalidate: true },
                                 _react2.default.createElement(
-                                    'form',
-                                    { name: 'sentMessage', id: 'contactForm', novalidate: true },
+                                    'div',
+                                    { className: 'row' },
                                     _react2.default.createElement(
                                         'div',
-                                        { className: 'row' },
+                                        { className: 'col-md-6' },
+                                        _react2.default.createElement(_activity_detail_card2.default, null)
+                                    ),
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'col-md-3 margin' },
                                         _react2.default.createElement(
                                             'div',
-                                            { className: 'col-md-6' },
-                                            _react2.default.createElement(_activity_detail_card2.default, null),
-                                            _react2.default.createElement(_comment2.default, null)
+                                            { className: 'form-group' },
+                                            _react2.default.createElement('img', { src: 'https://s-media-cache-ak0.pinimg.com/originals/07/57/68/0757689ff6330249baa0ba43a4a78f97.jpg' })
                                         ),
+                                        '\xA0\xA0\xA0',
                                         _react2.default.createElement(
                                             'div',
-                                            { className: 'col-md-3 margin' },
+                                            { className: 'col-lg-6 ' },
+                                            _react2.default.createElement('div', { id: 'success' }),
                                             _react2.default.createElement(
-                                                'div',
-                                                { className: 'form-group' },
-                                                _react2.default.createElement('img', { src: 'https://s-media-cache-ak0.pinimg.com/originals/07/57/68/0757689ff6330249baa0ba43a4a78f97.jpg' })
-                                            ),
-                                            '\xA0\xA0\xA0',
-                                            _react2.default.createElement(
-                                                'div',
-                                                { className: 'col-lg-6 ' },
-                                                _react2.default.createElement('div', { id: 'success' }),
-                                                _react2.default.createElement(
-                                                    'button',
-                                                    { type: 'submit', className: 'btn btn-xl ' },
-                                                    'Booking'
-                                                )
+                                                'button',
+                                                { type: 'submit', className: 'btn btn-xl ' },
+                                                'Booking'
                                             )
                                         )
                                     )
@@ -14128,7 +14129,7 @@ var App = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        null,
+        { className: 'bg-light-gray' },
         _react2.default.createElement(_header2.default, null),
         _react2.default.createElement(_nav2.default, null),
         this.props.children,
@@ -14450,106 +14451,61 @@ var Header = function (_React$Component) {
         'div',
         null,
         _react2.default.createElement(
-          'header',
-          null,
+          'div',
+          { id: 'carousel', className: 'carousel slide carousel-fade', 'data-ride': 'carousel' },
+          _react2.default.createElement(
+            'ol',
+            { className: 'carousel-indicators' },
+            _react2.default.createElement('li', { 'data-target': '#carousel', 'data-slide-to': '0', className: 'active' }),
+            _react2.default.createElement('li', { 'data-target': '#carousel', 'data-slide-to': '1' }),
+            _react2.default.createElement('li', { 'data-target': '#carousel', 'data-slide-to': '2' })
+          ),
           _react2.default.createElement(
             'div',
-            { className: 'carousel fade-carousel slide', 'data-ride': 'carousel', 'data-interval': '4000', id: 'bs-carousel' },
-            _react2.default.createElement('div', { className: 'overlay' }),
+            { className: 'carousel-inner' },
             _react2.default.createElement(
-              'ol',
-              { className: 'carousel-indicators' },
-              _react2.default.createElement('li', { 'data-target': '#bs-carousel', 'data-slide-to': '0', className: 'active' }),
-              _react2.default.createElement('li', { 'data-target': '#bs-carousel', 'data-slide-to': '1' }),
-              _react2.default.createElement('li', { 'data-target': '#bs-carousel', 'data-slide-to': '2' })
+              'div',
+              { className: 'active item' },
+              _react2.default.createElement('img', { src: 'http://www.baankrupu.com/wp-content/uploads/2015/12/ampawa1.jpg' })
             ),
             _react2.default.createElement(
               'div',
-              { className: 'carousel-inner' },
-              _react2.default.createElement(
-                'div',
-                { className: 'item slides active' },
-                _react2.default.createElement('div', { className: 'slide-1' }),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'hero' },
-                  _react2.default.createElement(
-                    'hgroup',
-                    null,
-                    _react2.default.createElement(
-                      'h1',
-                      null,
-                      'Milestyle'
-                    ),
-                    _react2.default.createElement(
-                      'h3',
-                      null,
-                      'Activity Hobby Experience'
-                    )
-                  ),
-                  _react2.default.createElement(
-                    'button',
-                    { className: 'btn btn-hero btn-lg', role: 'button' },
-                    'See all Activity'
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'item slides' },
-                _react2.default.createElement('div', { className: 'slide-2' }),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'hero' },
-                  _react2.default.createElement(
-                    'hgroup',
-                    null,
-                    _react2.default.createElement(
-                      'h1',
-                      null,
-                      'Milestyle'
-                    ),
-                    _react2.default.createElement(
-                      'h3',
-                      null,
-                      'Activity Hobby Experience'
-                    )
-                  ),
-                  _react2.default.createElement(
-                    'button',
-                    { className: 'btn btn-hero btn-lg', role: 'button' },
-                    'See all Activity'
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'item slides' },
-                _react2.default.createElement('div', { className: 'slide-3' }),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'hero' },
-                  _react2.default.createElement(
-                    'hgroup',
-                    null,
-                    _react2.default.createElement(
-                      'h1',
-                      null,
-                      'Milestyle'
-                    ),
-                    _react2.default.createElement(
-                      'h3',
-                      null,
-                      'Activity Hobby Experience'
-                    )
-                  ),
-                  _react2.default.createElement(
-                    'button',
-                    { className: 'btn btn-hero btn-lg', role: 'button' },
-                    'See all Activity'
-                  )
-                )
-              )
+              { className: 'item' },
+              _react2.default.createElement('img', { src: 'https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAiXAAAAJDE4MDc2MGY3LTZhM2QtNDI3Zi04YmQzLThlMWIxOTNkZjIwNg.jpg' })
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'item' },
+              _react2.default.createElement('img', { src: 'https://upload.wikimedia.org/wikipedia/commons/f/f6/Bangkok_skytrain_sunset.jpg' })
+            )
+          ),
+          _react2.default.createElement('a', { className: 'carousel-control left', href: '#carousel', 'data-slide': 'prev' }),
+          _react2.default.createElement('a', { className: 'carousel-control right', href: '#carousel', 'data-slide': 'next' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'hero' },
+          _react2.default.createElement(
+            'hgroup',
+            null,
+            _react2.default.createElement(
+              'h1',
+              null,
+              'Milestyle'
+            ),
+            _react2.default.createElement(
+              'h3',
+              null,
+              'Activity Hobby Experience'
+            )
+          ),
+          _react2.default.createElement(
+            'a',
+            { className: 'page-scroll', href: '#portfolio' },
+            _react2.default.createElement(
+              'button',
+              { className: 'btn btn-hero btn-lg', role: 'button' },
+              'See all Activity'
             )
           )
         )
@@ -14606,7 +14562,7 @@ var ProvCard = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                     'section',
-                    { id: 'portfolio', className: 'bg-light-gray' },
+                    { id: 'portfolio' },
                     _react2.default.createElement(
                         'div',
                         { className: 'container' },
@@ -14802,65 +14758,61 @@ var ProvinceDetail = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        null,
+        { className: 'marg' },
         _react2.default.createElement(
-          'section',
-          { id: 'portfolio', className: 'bg-light-gray' },
+          'div',
+          { className: 'container' },
+          _react2.default.createElement(
+            'h1',
+            { className: 'middle' },
+            'Province Detail'
+          ),
           _react2.default.createElement(
             'div',
-            { className: 'container' },
+            { className: 'btn-group marg' },
             _react2.default.createElement(
-              'h1',
-              { className: 'middle' },
-              'Province Detail'
+              'a',
+              { className: 'btn dropdown-toggle black', 'data-toggle': 'dropdown', href: '#' },
+              'Action',
+              _react2.default.createElement('span', { className: 'caret' })
             ),
             _react2.default.createElement(
-              'div',
-              { className: 'dropdown' },
+              'ul',
+              { className: 'dropdown-menu' },
               _react2.default.createElement(
-                'button',
-                { className: 'btn btn-default dropdown-toggle', type: 'button', id: 'dropdownMenu1', 'data-toggle': 'dropdown', 'aria-haspopup': 'true', 'aria-expanded': 'true' },
-                'Type',
-                _react2.default.createElement('span', { className: 'caret' })
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: '#' },
+                  'Adventure'
+                )
               ),
               _react2.default.createElement(
-                'ul',
-                { className: 'dropdown-menu', 'aria-labelledby': 'dropdownMenu1' },
+                'li',
+                null,
                 _react2.default.createElement(
-                  'li',
-                  null,
-                  _react2.default.createElement(
-                    'a',
-                    { href: '#' },
-                    'Adventure'
-                  )
-                ),
+                  'a',
+                  { href: '#' },
+                  'Music'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
                 _react2.default.createElement(
-                  'li',
-                  null,
-                  _react2.default.createElement(
-                    'a',
-                    { href: '#' },
-                    'Music'
-                  )
-                ),
+                  'a',
+                  { href: '#' },
+                  'Sport'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
                 _react2.default.createElement(
-                  'li',
-                  null,
-                  _react2.default.createElement(
-                    'a',
-                    { href: '#' },
-                    'Sport'
-                  )
-                ),
-                _react2.default.createElement(
-                  'li',
-                  null,
-                  _react2.default.createElement(
-                    'a',
-                    { href: '#' },
-                    'Cooking'
-                  )
+                  'a',
+                  { href: '#' },
+                  'Cooking'
                 )
               )
             )

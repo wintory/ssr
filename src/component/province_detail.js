@@ -5,23 +5,26 @@ import Card from './card'
 class ProvinceDetail extends React.Component{
   render(){
     return(
-        <div>
-          <section id="portfolio" className="bg-light-gray">
+        <div className="marg">
             <div className="container">
+
           <h1 className="middle">Province Detail</h1>
-            <div className="dropdown">
-    <button className="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-      Type
-      <span className="caret"></span>
-    </button>
-    <ul className="dropdown-menu" aria-labelledby="dropdownMenu1">
-      <li><a href="#">Adventure</a></li>
-      <li><a href="#">Music</a></li>
-      <li><a href="#">Sport</a></li>
-      <li><a href="#">Cooking</a></li>
-    </ul>
-  </div>
-</div></section>
+
+
+  <div className="btn-group marg">
+  <a className="btn dropdown-toggle black" data-toggle="dropdown" href="#">
+    Action
+    <span className="caret"></span>
+  </a>
+  <ul className="dropdown-menu">
+    <li><a href="#">Adventure</a></li>
+    <li><a href="#">Music</a></li>
+    <li><a href="#">Sport</a></li>
+    <li><a href="#">Cooking</a></li>
+  </ul>
+</div>
+
+</div>
 
           <Card line="Sport"/>
           <Card line="Party"/>

@@ -26,6 +26,7 @@ nav,
 section,
 summary {
   display: block;
+  margin-top: 0px;
 }
 audio,
 canvas,
@@ -4817,7 +4818,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   text-align: center;
   list-style: none;
   color: black;
-  
+
 }
 .pager li {
   display: inline;

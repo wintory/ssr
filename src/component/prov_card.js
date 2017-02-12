@@ -5,7 +5,10 @@ export default class ProvCard extends React.Component{
   render(){
     return(
     <div>
-        <section id="portfolio" className="bg-light-gray">
+
+  
+
+        <section id="portfolio">
           <div className="container">
 
               <div className="row">

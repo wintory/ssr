@@ -6,10 +6,10 @@ export default class Card extends React.Component{
   render(){
     return(
     <div>
-
-      <section id="portfolio" className="bg-light-gray">
+    <section id="portfolio">
         <div className="container">
           <h2>{this.props.line}</h2>
+          <h3>{this.props.detail}</h3>
             <div className="row">
                 <div className="col-lg-12 text-center">
 
@@ -98,7 +98,7 @@ export default class Card extends React.Component{
                                 <i className="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="http://www.tigermuaythai.com/wp-core/wp-content/uploads/2008/10/muay-thai-for-everyone-1.jpg" className="img-responsive" alt=""/>
+                        <img src="http://muaythaicampsthailand.com/wp-content/uploads/2012/12/tiger-muay-thai.jpg" className="img-responsive" alt=""/>
                     </Link>
                     <div className="portfolio-caption">
                         <h4>Muay Thai</h4>
@@ -108,7 +108,7 @@ export default class Card extends React.Component{
                 </div>
             </div>
         </div>
-    </section>
+        </section>
     </div>
     )
   }

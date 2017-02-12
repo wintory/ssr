@@ -8,7 +8,7 @@ export default class HomeDetail extends Component{
     return(
       <div>
         <ProvCard />
-      <Card line="Activity Recommend"/>
+      <Card line="Activity Recommend" detail="THESE ARE OUR FAVOURITE & MOST POPULAR PROVINCE THAT YOU SHOULDN’T MISS WHILE IN THAILAND!"/>
       </div>
     )
   }

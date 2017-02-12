@@ -10,10 +10,9 @@ import Footer from './footer'
 export default class App extends React.Component{
   render(){
     return(
-      <div>
+      <div className="bg-light-gray">
           <Header/>
         <Nav />
-
         {this.props.children}
           <Footer />
 

@@ -20,12 +20,10 @@ export default class Nav extends React.Component{
                 </button>
                 <Link to="home" className="navbar-brand page-scroll" >MileStyle</Link>
             </div>
-<form className="col-md-8 navbar-form navbar-left" role="search">
-            <div className="form-group">
-   <input type="text" className="form-control"  placeholder="Search"/>
- </div>
- <button type="submit" className="btn btn-default">search</button>
-</form>
+<form className = "col-md-1 navbar-form navbar-left" role = "search" > <div className="form-group">
+    <input type="text" className="form-control" placeholder="Search"/>
+</div> <button type = "submit" className = "btn btn-default" > search </button>
+</form >
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul className="nav navbar-nav navbar-right">
                     <li className="hidden">
