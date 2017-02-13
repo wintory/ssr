@@ -1,46 +1,39 @@
 import React from 'react'
 import {Link} from 'react-router'
-import Card from './card'
+import Card2 from './card2'
 
-class ProvinceDetail extends React.Component{
-  render(){
-    return(
-        <div className="marg">
-            <div className="container">
+class ProvinceDetail extends React.Component {
+    render() {
+        return (
+            <div className="marg">
+                <div className="container">
 
-          <h1 className="middle">Province Detail</h1>
+                    <h2 className="middle">Province Detail</h2>
 
+                </div>
 
-  <div className="btn-group marg">
-  <a className="btn dropdown-toggle black" data-toggle="dropdown" href="#">
-    Action
-    <span className="caret"></span>
-  </a>
-  <ul className="dropdown-menu">
-    <li><a href="#">Adventure</a></li>
-    <li><a href="#">Music</a></li>
-    <li><a href="#">Sport</a></li>
-    <li><a href="#">Cooking</a></li>
-  </ul>
-</div>
+                <Card2 topic="Sport"/>
+                <Card2 topic="Party"/>
+                <Card2 topic="All Activity"/>
+                <section className="bg-light-gray">
+                    <nav aria-label="...">
+                        <ul className="pager">
+                            <li>
+                                <a href="#">
+                                    <h4>Previous</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <h4>Next</h4>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
 
-</div>
-
-          <Card line="Sport"/>
-          <Card line="Party"/>
-          <Card line="All Activity"/>
-          <section className="bg-light-gray">
-            <nav aria-label="...">
-      <ul className="pager">
-        <li><a href="#"><h4>Previous</h4></a></li>
-        <li><a href="#"><h4>Next</h4></a></li>
-      </ul>
-    </nav>
-    </section>
-
-          <Link to="/activity_detail">go page Acc</Link>
-        </div>
-    )
-  }
+            </div>
+        )
+    }
 }
 export default ProvinceDetail

@@ -1,15 +1,15 @@
-import React,{Component} from 'react'
+import React, {Component} from 'react'
 import {Link} from 'react-router'
-import ProvCard from './prov_card'
-import Card from './card'
+import ProvCard2 from './prov_card2'
+import Card2 from './card2'
 
-export default class HomeDetail extends Component{
-  render(){
-    return(
-      <div>
-        <ProvCard />
-      <Card line="Activity Recommend" detail="THESE ARE OUR FAVOURITE & MOST POPULAR PROVINCE THAT YOU SHOULDN’T MISS WHILE IN THAILAND!"/>
-      </div>
-    )
-  }
+export default class HomeDetail extends Component {
+    render() {
+        return (
+            <div>
+                <ProvCard2/>
+                <Card2 topic="Activity Recommend"/>
+            </div>
+        )
+    }
 }

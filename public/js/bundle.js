@@ -1366,7 +1366,7 @@ var CallbackQueue = __webpack_require__(86);
 var PooledClass = __webpack_require__(20);
 var ReactFeatureFlags = __webpack_require__(91);
 var ReactReconciler = __webpack_require__(25);
-var Transaction = __webpack_require__(41);
+var Transaction = __webpack_require__(42);
 
 var invariant = __webpack_require__(1);
 
@@ -2926,7 +2926,7 @@ var _warning2 = _interopRequireDefault(_warning);
 
 var _PathUtils = __webpack_require__(16);
 
-var _Actions = __webpack_require__(36);
+var _Actions = __webpack_require__(37);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -3019,7 +3019,7 @@ var locationsAreEqual = exports.locationsAreEqual = function locationsAreEqual(a
 
 
 var DOMNamespaces = __webpack_require__(51);
-var setInnerHTML = __webpack_require__(43);
+var setInnerHTML = __webpack_require__(44);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(59);
 var setTextContent = __webpack_require__(103);
@@ -3719,7 +3719,7 @@ module.exports = emptyObject;
 
 var _prodInvariant = __webpack_require__(3);
 
-var EventPluginRegistry = __webpack_require__(38);
+var EventPluginRegistry = __webpack_require__(39);
 var EventPluginUtils = __webpack_require__(52);
 var ReactErrorUtils = __webpack_require__(56);
 
@@ -4667,6 +4667,470 @@ var routes = oneOfType([route, arrayOf(route)]);
 "use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(8);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Card2 = function (_React$Component) {
+    _inherits(Card2, _React$Component);
+
+    function Card2() {
+        _classCallCheck(this, Card2);
+
+        return _possibleConstructorReturn(this, (Card2.__proto__ || Object.getPrototypeOf(Card2)).apply(this, arguments));
+    }
+
+    _createClass(Card2, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    'div',
+                    { id: 'products', className: 'content-section' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'container' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'row' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'col-md-12 text-center' },
+                                _react2.default.createElement(
+                                    'h2',
+                                    { className: 'section-title black' },
+                                    this.props.topic
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'row' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'col-md-3 col-sm-6' },
+                                _react2.default.createElement(
+                                    _reactRouter.Link,
+                                    { to: 'activity_detail' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'product-item' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'item-thumb' },
+                                            _react2.default.createElement('div', { className: 'overlay' }),
+                                            _react2.default.createElement('img', { src: 'https://assets.goodhousekeeping.co.uk/main/embedded/14605/cooking-at-ghi-cookery-school-04__medium.jpg?20161125114314', alt: '' })
+                                        ),
+                                        _react2.default.createElement(
+                                            'h4',
+                                            null,
+                                            'Cooking'
+                                        ),
+                                        _react2.default.createElement(
+                                            'div',
+                                            null,
+                                            _react2.default.createElement(
+                                                'span',
+                                                null,
+                                                'Bangkok'
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            'span',
+                                            null,
+                                            'Price :',
+                                            _react2.default.createElement(
+                                                'em',
+                                                { className: 'price' },
+                                                '1800.00 Baht'
+                                            )
+                                        )
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'col-md-3 col-sm-6' },
+                                _react2.default.createElement(
+                                    _reactRouter.Link,
+                                    { to: 'activity_detail' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'product-item' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'item-thumb' },
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'overlay' },
+                                                _react2.default.createElement('div', { className: 'overlay-inner' })
+                                            ),
+                                            _react2.default.createElement('img', { src: 'http://000fdu0.myregisteredwp.com/wp-content/uploads/sites/3001/2016/09/restaurant.jpg', alt: '' })
+                                        ),
+                                        _react2.default.createElement(
+                                            'h4',
+                                            null,
+                                            'Chlef Training'
+                                        ),
+                                        _react2.default.createElement(
+                                            'div',
+                                            null,
+                                            _react2.default.createElement(
+                                                'span',
+                                                null,
+                                                'Bangkok'
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            'span',
+                                            null,
+                                            'Price :',
+                                            _react2.default.createElement(
+                                                'em',
+                                                { className: 'price' },
+                                                '3700.00 Baht'
+                                            )
+                                        )
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'col-md-3 col-sm-6' },
+                                _react2.default.createElement(
+                                    _reactRouter.Link,
+                                    { to: 'activity_detail' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'product-item' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'item-thumb' },
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'overlay' },
+                                                _react2.default.createElement('div', { className: 'overlay-inner' })
+                                            ),
+                                            _react2.default.createElement(
+                                                _reactRouter.Link,
+                                                { to: 'activity_detail' },
+                                                _react2.default.createElement('img', { src: 'http://www.nightoutexpert.com/wp-content/uploads/2016/08/living-room-sports-bar-in-dublin.jpg', alt: '' })
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            'h4',
+                                            null,
+                                            'Night Bar Club'
+                                        ),
+                                        _react2.default.createElement(
+                                            'div',
+                                            null,
+                                            _react2.default.createElement(
+                                                'span',
+                                                null,
+                                                'Bangkok'
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            'span',
+                                            null,
+                                            'Price :',
+                                            _react2.default.createElement(
+                                                'em',
+                                                { className: 'price' },
+                                                '840.00 Baht'
+                                            )
+                                        )
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'col-md-3 col-sm-6' },
+                                _react2.default.createElement(
+                                    _reactRouter.Link,
+                                    { to: 'activity_detail' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'product-item' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'item-thumb' },
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'overlay' },
+                                                _react2.default.createElement('div', { className: 'overlay-inner' })
+                                            ),
+                                            _react2.default.createElement(
+                                                _reactRouter.Link,
+                                                { to: 'activity_detail' },
+                                                _react2.default.createElement('img', { src: 'http://r-ak.bstatic.com/images/hotel/max400/837/83797070.jpg', alt: '' })
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            'h4',
+                                            null,
+                                            'Pichaya Resort & Spa'
+                                        ),
+                                        _react2.default.createElement(
+                                            'div',
+                                            null,
+                                            _react2.default.createElement(
+                                                'span',
+                                                null,
+                                                'Pattaya'
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            'span',
+                                            null,
+                                            'Price :',
+                                            _react2.default.createElement(
+                                                'em',
+                                                { className: 'price' },
+                                                '740.00 Baht'
+                                            )
+                                        )
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'col-md-3 col-sm-6' },
+                                _react2.default.createElement(
+                                    _reactRouter.Link,
+                                    { to: 'activity_detail' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'product-item' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'item-thumb' },
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'overlay' },
+                                                _react2.default.createElement('div', { className: 'overlay-inner' })
+                                            ),
+                                            _react2.default.createElement(
+                                                _reactRouter.Link,
+                                                { to: 'activity_detail' },
+                                                _react2.default.createElement('img', { src: 'https://trazy-spot-thumb.s3-ap-southeast-1.amazonaws.com/4-4942417084.jpg', alt: '' })
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            'h4',
+                                            null,
+                                            'Khaosan R. Guide'
+                                        ),
+                                        _react2.default.createElement(
+                                            'div',
+                                            null,
+                                            _react2.default.createElement(
+                                                'span',
+                                                null,
+                                                'Bangkok'
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            'span',
+                                            null,
+                                            'Price :',
+                                            _react2.default.createElement(
+                                                'em',
+                                                { className: 'price' },
+                                                '1200.00 Baht'
+                                            )
+                                        )
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'col-md-3 col-sm-6' },
+                                _react2.default.createElement(
+                                    _reactRouter.Link,
+                                    { to: 'activity_detail' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'product-item' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'item-thumb' },
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'overlay' },
+                                                _react2.default.createElement('div', { className: 'overlay-inner' })
+                                            ),
+                                            _react2.default.createElement(
+                                                _reactRouter.Link,
+                                                { to: 'activity_detail' },
+                                                _react2.default.createElement('img', { src: 'http://www.mamikugardens.com/images/hike-2-thumb.jpg', alt: '' })
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            'h4',
+                                            null,
+                                            'Hiking'
+                                        ),
+                                        _react2.default.createElement(
+                                            'div',
+                                            null,
+                                            _react2.default.createElement(
+                                                'span',
+                                                null,
+                                                'Chiangmai'
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            'span',
+                                            null,
+                                            'Price :',
+                                            _react2.default.createElement(
+                                                'em',
+                                                { className: 'price' },
+                                                '7200.00 Baht'
+                                            )
+                                        )
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'col-md-3 col-sm-6' },
+                                _react2.default.createElement(
+                                    _reactRouter.Link,
+                                    { to: 'activity_detail' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'product-item' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'item-thumb' },
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'overlay' },
+                                                _react2.default.createElement('div', { className: 'overlay-inner' })
+                                            ),
+                                            _react2.default.createElement(
+                                                _reactRouter.Link,
+                                                { to: 'activity_detail' },
+                                                _react2.default.createElement('img', { src: 'http://www.muaythaitrainingthailand.com/images/images-index/muay-thai-training-thailand-photo5.jpg', alt: '' })
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            'h4',
+                                            null,
+                                            'Muay Thai'
+                                        ),
+                                        _react2.default.createElement(
+                                            'div',
+                                            null,
+                                            _react2.default.createElement(
+                                                'span',
+                                                null,
+                                                'Bangkok'
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            'span',
+                                            null,
+                                            'Price :',
+                                            _react2.default.createElement(
+                                                'em',
+                                                { className: 'price' },
+                                                '$480.00 Baht'
+                                            )
+                                        )
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'col-md-3 col-sm-6' },
+                                _react2.default.createElement(
+                                    _reactRouter.Link,
+                                    { to: 'activity_detail' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'product-item' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'item-thumb' },
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'overlay' },
+                                                _react2.default.createElement('div', { className: 'overlay-inner' })
+                                            ),
+                                            _react2.default.createElement(
+                                                _reactRouter.Link,
+                                                { to: 'activity_detail' },
+                                                _react2.default.createElement('img', { src: 'http://www.vistaverde.com/wp-content/uploads/2010/11/biking-03-400x400.jpg', alt: '' })
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            'h4',
+                                            null,
+                                            'Biking'
+                                        ),
+                                        _react2.default.createElement(
+                                            'div',
+                                            null,
+                                            _react2.default.createElement(
+                                                'span',
+                                                null,
+                                                'Chiangmai'
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            'span',
+                                            null,
+                                            'Price :',
+                                            _react2.default.createElement(
+                                                'em',
+                                                { className: 'price' },
+                                                '660.00 Baht'
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Card2;
+}(_react2.default.Component);
+
+exports.default = Card2;
+
+/***/ }),
+/* 37 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 exports.__esModule = true;
 /**
  * Indicates that navigation was caused by a call to history.push.
@@ -4689,7 +5153,7 @@ var REPLACE = exports.REPLACE = 'REPLACE';
 var POP = exports.POP = 'POP';
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4735,7 +5199,7 @@ var supportsPopstateOnHashchange = exports.supportsPopstateOnHashchange = functi
 };
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4996,7 +5460,7 @@ module.exports = EventPluginRegistry;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5014,7 +5478,7 @@ module.exports = EventPluginRegistry;
 
 var _assign = __webpack_require__(5);
 
-var EventPluginRegistry = __webpack_require__(38);
+var EventPluginRegistry = __webpack_require__(39);
 var ReactEventEmitterMixin = __webpack_require__(185);
 var ViewportMetrics = __webpack_require__(96);
 
@@ -5329,7 +5793,7 @@ var ReactBrowserEventEmitter = _assign({}, ReactEventEmitterMixin, {
 module.exports = ReactBrowserEventEmitter;
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5406,7 +5870,7 @@ SyntheticUIEvent.augmentClass(SyntheticMouseEvent, MouseEventInterface);
 module.exports = SyntheticMouseEvent;
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5637,7 +6101,7 @@ module.exports = TransactionImpl;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5765,7 +6229,7 @@ function escapeTextContentForBrowser(text) {
 module.exports = escapeTextContentForBrowser;
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5868,306 +6332,6 @@ if (ExecutionEnvironment.canUseDOM) {
 module.exports = setInnerHTML;
 
 /***/ }),
-/* 44 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouter = __webpack_require__(8);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Card = function (_React$Component) {
-    _inherits(Card, _React$Component);
-
-    function Card() {
-        _classCallCheck(this, Card);
-
-        return _possibleConstructorReturn(this, (Card.__proto__ || Object.getPrototypeOf(Card)).apply(this, arguments));
-    }
-
-    _createClass(Card, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    'section',
-                    { id: 'portfolio' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'container' },
-                        _react2.default.createElement(
-                            'h2',
-                            null,
-                            this.props.line
-                        ),
-                        _react2.default.createElement(
-                            'h3',
-                            null,
-                            this.props.detail
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'row' },
-                            _react2.default.createElement('div', { className: 'col-lg-12 text-center' })
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'row' },
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'col-md-4 col-sm-6 portfolio-item' },
-                                _react2.default.createElement(
-                                    _reactRouter.Link,
-                                    { to: '/activity_detail' },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'portfolio-hover' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'portfolio-hover-content' },
-                                            _react2.default.createElement('i', { className: 'fa fa-plus fa-3x' })
-                                        )
-                                    ),
-                                    _react2.default.createElement('img', { src: 'http://www.getnowapp.com/wp-content/uploads/2016/04/healthy-cooking.jpg', className: 'img-responsive', alt: '' })
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'portfolio-caption' },
-                                    _react2.default.createElement(
-                                        'h4',
-                                        null,
-                                        'Cooking'
-                                    ),
-                                    _react2.default.createElement(
-                                        'p',
-                                        { className: 'text-muted' },
-                                        'Bangkok'
-                                    ),
-                                    _react2.default.createElement(
-                                        'p',
-                                        { className: 'text-muted' },
-                                        '1300 Baht'
-                                    )
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'col-md-4 col-sm-6 portfolio-item' },
-                                _react2.default.createElement(
-                                    _reactRouter.Link,
-                                    { to: '/activity_detail' },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'portfolio-hover' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'portfolio-hover-content' },
-                                            _react2.default.createElement('i', { className: 'fa fa-plus fa-3x' })
-                                        )
-                                    ),
-                                    _react2.default.createElement('img', { src: 'http://timeout-test.candrholdings.com/media/content/normal/16746_J_Forest_Music_bar.jpg', className: 'img-responsive', alt: '' })
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'portfolio-caption' },
-                                    _react2.default.createElement(
-                                        'h4',
-                                        null,
-                                        'Night Bar Club'
-                                    ),
-                                    _react2.default.createElement(
-                                        'p',
-                                        { className: 'text-muted' },
-                                        'Bangkok'
-                                    ),
-                                    _react2.default.createElement(
-                                        'p',
-                                        { className: 'text-muted' },
-                                        '1000 Baht'
-                                    )
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'col-md-4 col-sm-6 portfolio-item' },
-                                _react2.default.createElement(
-                                    _reactRouter.Link,
-                                    { to: '/activity_detail' },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'portfolio-hover' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'portfolio-hover-content' },
-                                            _react2.default.createElement('i', { className: 'fa fa-plus fa-3x' })
-                                        )
-                                    ),
-                                    _react2.default.createElement('img', { src: 'https://s-media-cache-ak0.pinimg.com/originals/b1/c7/62/b1c7620124391aba1154ca8288abab5b.jpg', className: 'img-responsive', alt: '' })
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'portfolio-caption' },
-                                    _react2.default.createElement(
-                                        'h4',
-                                        null,
-                                        'Treehouse'
-                                    ),
-                                    _react2.default.createElement(
-                                        'p',
-                                        { className: 'text-muted' },
-                                        'Pattaya'
-                                    ),
-                                    _react2.default.createElement(
-                                        'p',
-                                        { className: 'text-muted' },
-                                        '2700 Baht'
-                                    )
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'col-md-4 col-sm-6 portfolio-item' },
-                                _react2.default.createElement(
-                                    _reactRouter.Link,
-                                    { to: 'activity_detail' },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'portfolio-hover' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'portfolio-hover-content' },
-                                            _react2.default.createElement('i', { className: 'fa fa-plus fa-3x' })
-                                        )
-                                    ),
-                                    _react2.default.createElement('img', { src: 'http://pathwaytoaus.com/wp-content/uploads/2014/12/cafe-dupont-chef-at-the-dupont-circle-hotel_gallery_image.jpg', className: 'img-responsive', alt: '' })
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'portfolio-caption' },
-                                    _react2.default.createElement(
-                                        'h4',
-                                        null,
-                                        'Chlef Training'
-                                    ),
-                                    _react2.default.createElement(
-                                        'p',
-                                        { className: 'text-muted' },
-                                        'Bangkok'
-                                    ),
-                                    _react2.default.createElement(
-                                        'p',
-                                        { className: 'text-muted' },
-                                        '4200 Bath'
-                                    )
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'col-md-4 col-sm-6 portfolio-item' },
-                                _react2.default.createElement(
-                                    _reactRouter.Link,
-                                    { to: 'activity_detail' },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'portfolio-hover' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'portfolio-hover-content' },
-                                            _react2.default.createElement('i', { className: 'fa fa-plus fa-3x' })
-                                        )
-                                    ),
-                                    _react2.default.createElement('img', { src: 'http://cdn.snowkingmountain.com/wp-content/uploads/2015/10/couple-hiking-atop-snow-king-mountain-1024x683.jpg', className: 'img-responsive', alt: '' })
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'portfolio-caption' },
-                                    _react2.default.createElement(
-                                        'h4',
-                                        null,
-                                        'Hiking'
-                                    ),
-                                    _react2.default.createElement(
-                                        'p',
-                                        { className: 'text-muted' },
-                                        'ChiangMai'
-                                    ),
-                                    _react2.default.createElement(
-                                        'p',
-                                        { className: 'text-muted' },
-                                        '8500 Bath'
-                                    )
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'col-md-4 col-sm-6 portfolio-item' },
-                                _react2.default.createElement(
-                                    _reactRouter.Link,
-                                    { to: 'activity_detail' },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'portfolio-hover' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'portfolio-hover-content' },
-                                            _react2.default.createElement('i', { className: 'fa fa-plus fa-3x' })
-                                        )
-                                    ),
-                                    _react2.default.createElement('img', { src: 'http://muaythaicampsthailand.com/wp-content/uploads/2012/12/tiger-muay-thai.jpg', className: 'img-responsive', alt: '' })
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'portfolio-caption' },
-                                    _react2.default.createElement(
-                                        'h4',
-                                        null,
-                                        'Muay Thai'
-                                    ),
-                                    _react2.default.createElement(
-                                        'p',
-                                        { className: 'text-muted' },
-                                        'Bangkok'
-                                    ),
-                                    _react2.default.createElement(
-                                        'p',
-                                        { className: 'text-muted' },
-                                        '3500 Bath'
-                                    )
-                                )
-                            )
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Card;
-}(_react2.default.Component);
-
-exports.default = Card;
-
-/***/ }),
 /* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6252,7 +6416,7 @@ exports.go = exports.replaceLocation = exports.pushLocation = exports.startListe
 
 var _LocationUtils = __webpack_require__(23);
 
-var _DOMUtils = __webpack_require__(37);
+var _DOMUtils = __webpack_require__(38);
 
 var _DOMStateStorage = __webpack_require__(82);
 
@@ -6371,7 +6535,7 @@ var _runTransitionHook = __webpack_require__(49);
 
 var _runTransitionHook2 = _interopRequireDefault(_runTransitionHook);
 
-var _Actions = __webpack_require__(36);
+var _Actions = __webpack_require__(37);
 
 var _LocationUtils = __webpack_require__(23);
 
@@ -6589,7 +6753,7 @@ var ReactDOMComponentTree = __webpack_require__(6);
 var ReactInstrumentation = __webpack_require__(11);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(59);
-var setInnerHTML = __webpack_require__(43);
+var setInnerHTML = __webpack_require__(44);
 var setTextContent = __webpack_require__(103);
 
 function getNodeAfter(parentNode, node) {
@@ -7416,7 +7580,7 @@ var _prodInvariant = __webpack_require__(3);
 var DOMLazyTree = __webpack_require__(24);
 var DOMProperty = __webpack_require__(17);
 var React = __webpack_require__(28);
-var ReactBrowserEventEmitter = __webpack_require__(39);
+var ReactBrowserEventEmitter = __webpack_require__(40);
 var ReactCurrentOwner = __webpack_require__(14);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactDOMContainerInfo = __webpack_require__(168);
@@ -7432,7 +7596,7 @@ var ReactUpdates = __webpack_require__(13);
 var emptyObject = __webpack_require__(29);
 var instantiateReactComponent = __webpack_require__(101);
 var invariant = __webpack_require__(1);
-var setInnerHTML = __webpack_require__(43);
+var setInnerHTML = __webpack_require__(44);
 var shouldUpdateReactComponent = __webpack_require__(64);
 var warning = __webpack_require__(2);
 
@@ -9589,7 +9753,7 @@ module.exports = getIteratorFn;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -9604,6 +9768,10 @@ var _home_detail = __webpack_require__(77);
 
 var _home_detail2 = _interopRequireDefault(_home_detail);
 
+var _card = __webpack_require__(36);
+
+var _card2 = _interopRequireDefault(_card);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -9613,26 +9781,26 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Home = function (_React$Component) {
-  _inherits(Home, _React$Component);
+    _inherits(Home, _React$Component);
 
-  function Home() {
-    _classCallCheck(this, Home);
+    function Home() {
+        _classCallCheck(this, Home);
 
-    return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
-  }
-
-  _createClass(Home, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(_home_detail2.default, null)
-      );
+        return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
     }
-  }]);
 
-  return Home;
+    _createClass(Home, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(_home_detail2.default, null)
+            );
+        }
+    }]);
+
+    return Home;
 }(_react2.default.Component);
 
 exports.default = Home;
@@ -9645,7 +9813,7 @@ exports.default = Home;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -9660,7 +9828,7 @@ var _prov_card = __webpack_require__(128);
 
 var _prov_card2 = _interopRequireDefault(_prov_card);
 
-var _card = __webpack_require__(44);
+var _card = __webpack_require__(36);
 
 var _card2 = _interopRequireDefault(_card);
 
@@ -9673,27 +9841,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var HomeDetail = function (_Component) {
-  _inherits(HomeDetail, _Component);
+    _inherits(HomeDetail, _Component);
 
-  function HomeDetail() {
-    _classCallCheck(this, HomeDetail);
+    function HomeDetail() {
+        _classCallCheck(this, HomeDetail);
 
-    return _possibleConstructorReturn(this, (HomeDetail.__proto__ || Object.getPrototypeOf(HomeDetail)).apply(this, arguments));
-  }
-
-  _createClass(HomeDetail, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(_prov_card2.default, null),
-        _react2.default.createElement(_card2.default, { line: 'Activity Recommend', detail: 'THESE ARE OUR FAVOURITE & MOST POPULAR PROVINCE THAT YOU SHOULDN\u2019T MISS WHILE IN THAILAND!' })
-      );
+        return _possibleConstructorReturn(this, (HomeDetail.__proto__ || Object.getPrototypeOf(HomeDetail)).apply(this, arguments));
     }
-  }]);
 
-  return HomeDetail;
+    _createClass(HomeDetail, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(_prov_card2.default, null),
+                _react2.default.createElement(_card2.default, { topic: 'Activity Recommend' })
+            );
+        }
+    }]);
+
+    return HomeDetail;
 }(_react.Component);
 
 exports.default = HomeDetail;
@@ -9706,7 +9874,7 @@ exports.default = HomeDetail;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -9726,215 +9894,209 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Nav = function (_React$Component) {
-  _inherits(Nav, _React$Component);
+    _inherits(Nav, _React$Component);
 
-  function Nav() {
-    _classCallCheck(this, Nav);
+    function Nav() {
+        _classCallCheck(this, Nav);
 
-    return _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).apply(this, arguments));
-  }
-
-  _createClass(Nav, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-          'section',
-          { id: 'portfolio' },
-          _react2.default.createElement(
-            'nav',
-            { id: 'mainNav', className: ' navbar navbar-default navbar-custom navbar-fixed-top' },
-            _react2.default.createElement(
-              'div',
-              { className: 'container' },
-              _react2.default.createElement(
-                'div',
-                { className: 'navbar-header page-scroll' },
-                _react2.default.createElement(
-                  'button',
-                  { type: 'button', className: 'navbar-toggle', 'data-toggle': 'collapse', 'data-target': '#bs-example-navbar-collapse-1' },
-                  _react2.default.createElement(
-                    'span',
-                    { className: 'sr-only' },
-                    'Toggle navigation'
-                  ),
-                  ' Menu ',
-                  _react2.default.createElement('i', { className: 'fa fa-bars' })
-                ),
-                _react2.default.createElement(
-                  _reactRouter.Link,
-                  { to: 'home', className: 'navbar-brand page-scroll' },
-                  'MileStyle'
-                )
-              ),
-              _react2.default.createElement(
-                'form',
-                { className: 'col-md-1 navbar-form navbar-left', role: 'search' },
-                ' ',
-                _react2.default.createElement(
-                  'div',
-                  { className: 'form-group' },
-                  _react2.default.createElement('input', { type: 'text', className: 'form-control', placeholder: 'Search' })
-                ),
-                ' ',
-                _react2.default.createElement(
-                  'button',
-                  { type: 'submit', className: 'btn btn-default' },
-                  ' search '
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'collapse navbar-collapse', id: 'bs-example-navbar-collapse-1' },
-                _react2.default.createElement(
-                  'ul',
-                  { className: 'nav navbar-nav navbar-right' },
-                  _react2.default.createElement(
-                    'li',
-                    { className: 'hidden' },
-                    _react2.default.createElement(
-                      _reactRouter.Link,
-                      { to: '*' },
-                      'Login'
-                    )
-                  ),
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    _react2.default.createElement(
-                      _reactRouter.Link,
-                      { to: 'home' },
-                      'Home'
-                    )
-                  ),
-                  _react2.default.createElement(
-                    'li',
-                    { 'data-toggle': 'modal', 'data-target': '#myModal' },
-                    _react2.default.createElement(
-                      _reactRouter.Link,
-                      { to: '' },
-                      'Login'
-                    )
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'modal fade', id: 'myModal', tabindex: '-1', role: 'dialog', 'aria-labelledby': 'myModalLabel' },
-            _react2.default.createElement(
-              'div',
-              { className: 'modal-dialog', role: 'document' },
-              _react2.default.createElement(
-                'div',
-                { className: 'modal-content' },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'modal-header' },
-                  _react2.default.createElement(
-                    'button',
-                    { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-label': 'Close' },
-                    _react2.default.createElement(
-                      'span',
-                      { 'aria-hidden': 'true' },
-                      '\xD7'
-                    )
-                  ),
-                  _react2.default.createElement(
-                    'h4',
-                    { className: 'modal-title', id: 'myModalLabel' },
-                    'Login'
-                  )
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'modal-body' },
-                  _react2.default.createElement(
-                    'a',
-                    { className: 'btn btn-block btn-social btn-lg btn-facebook' },
-                    _react2.default.createElement('span', { className: 'fa fa-facebook' }),
-                    ' Sign in with Facebook'
-                  ),
-                  _react2.default.createElement(
-                    'a',
-                    { className: 'btn btn-block btn-social btn-lg btn-google' },
-                    _react2.default.createElement('span', { className: 'fa fa-google' }),
-                    ' Sign in with Google+'
-                  ),
-                  _react2.default.createElement(
-                    'span',
-                    null,
-                    '\xA0\xA0'
-                  ),
-                  _react2.default.createElement(
-                    'span',
-                    null,
-                    '\xA0\xA0'
-                  ),
-                  _react2.default.createElement(
-                    'form',
-                    null,
-                    _react2.default.createElement(
-                      'fieldset',
-                      null,
-                      _react2.default.createElement(
-                        'div',
-                        { className: 'form-group' },
-                        _react2.default.createElement(
-                          'label',
-                          null,
-                          'Email'
-                        ),
-                        _react2.default.createElement('input', { type: 'text', className: 'form-control' })
-                      ),
-                      _react2.default.createElement(
-                        'div',
-                        { className: 'form-group' },
-                        _react2.default.createElement(
-                          'label',
-                          null,
-                          'Password'
-                        ),
-                        _react2.default.createElement('input', { type: 'password', className: 'form-control' })
-                      ),
-                      _react2.default.createElement(
-                        'div',
-                        { className: 'form-group' },
-                        _react2.default.createElement(
-                          'button',
-                          { type: 'button', className: 'btn btn-default' },
-                          'Register'
-                        ),
-                        _react2.default.createElement(
-                          'button',
-                          { type: 'submit', className: 'btn btn-default' },
-                          'Submit'
-                        )
-                      )
-                    )
-                  )
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'modal-footer' },
-                  _react2.default.createElement(
-                    'button',
-                    { type: 'button', className: 'btn btn-primary', 'data-dismiss': 'modal' },
-                    'Close'
-                  )
-                )
-              )
-            )
-          )
-        )
-      );
+        return _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).apply(this, arguments));
     }
-  }]);
 
-  return Nav;
+    _createClass(Nav, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    'nav',
+                    { className: ' navbar navbar-default navbar-custom navbar-fixed-top navbar-inner' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'container' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'navbar-header page-scroll' },
+                            _react2.default.createElement(
+                                'button',
+                                { type: 'button', className: 'navbar-toggle', 'data-toggle': 'collapse', 'data-target': '#bs-example-navbar-collapse-1' },
+                                _react2.default.createElement(
+                                    'span',
+                                    { className: 'sr-only' },
+                                    'Toggle navigation'
+                                ),
+                                'Menu',
+                                _react2.default.createElement('i', { className: 'fa fa-bars' })
+                            ),
+                            _react2.default.createElement(
+                                _reactRouter.Link,
+                                { to: 'home', className: 'navbar-brand page-scroll' },
+                                'MileStyle'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'collapse navbar-collapse', id: 'bs-example-navbar-collapse-1' },
+                            _react2.default.createElement(
+                                'ul',
+                                { className: 'nav navbar-nav navbar-right' },
+                                _react2.default.createElement(
+                                    'li',
+                                    { className: 'hidden' },
+                                    _react2.default.createElement(
+                                        _reactRouter.Link,
+                                        { to: '*' },
+                                        'Login'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'li',
+                                    null,
+                                    _react2.default.createElement(
+                                        _reactRouter.Link,
+                                        { to: 'home' },
+                                        _react2.default.createElement(
+                                            'h4',
+                                            null,
+                                            'Home'
+                                        )
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'li',
+                                    { 'data-toggle': 'modal', 'data-target': '#myModal' },
+                                    _react2.default.createElement(
+                                        _reactRouter.Link,
+                                        { to: '' },
+                                        _react2.default.createElement(
+                                            'h4',
+                                            null,
+                                            'Login'
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'modal fade', id: 'myModal', tabindex: '-1', role: 'dialog', 'aria-labelledby': 'myModalLabel' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'modal-dialog', role: 'document' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'modal-content' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'modal-header' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'container' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'omb_login ' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'row omb_row-sm-offset-3 omb_socialButtons marg' },
+                                            _react2.default.createElement(
+                                                'h2',
+                                                { className: 'omb_authTitle' },
+                                                'Login or Sign up'
+                                            ),
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: ' col-xs-4 col-sm-2' },
+                                                _react2.default.createElement(
+                                                    'a',
+                                                    { href: '#', className: 'btn btn-lg btn-block omb_btn-facebook' },
+                                                    _react2.default.createElement('i', { className: 'fa fa-facebook visible-xs' }),
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'hidden-xs' },
+                                                        'Facebook'
+                                                    )
+                                                )
+                                            ),
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'col-xs-4 col-sm-2 ' },
+                                                _react2.default.createElement(
+                                                    'a',
+                                                    { href: '#', className: 'btn btn-lg btn-block omb_btn-twitter' },
+                                                    _react2.default.createElement('i', { className: 'fa fa-twitter visible-xs' }),
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'hidden-xs' },
+                                                        'Twitter'
+                                                    )
+                                                )
+                                            ),
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'col-xs-4 col-sm-2 ' },
+                                                _react2.default.createElement(
+                                                    'a',
+                                                    { href: '#', className: 'btn btn-lg btn-block omb_btn-google' },
+                                                    _react2.default.createElement('i', { className: 'fa fa-google-plus visible-xs' }),
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'hidden-xs' },
+                                                        'Google+'
+                                                    )
+                                                )
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'row omb_row-sm-offset-3' },
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'col-xs-12 col-sm-6' },
+                                                _react2.default.createElement(
+                                                    'form',
+                                                    { className: 'omb_loginForm', action: '', autocomplete: 'off', method: 'POST' },
+                                                    _react2.default.createElement(
+                                                        'div',
+                                                        { className: 'input-group' },
+                                                        _react2.default.createElement('input', { type: 'text', className: 'form-control middle', name: 'username', placeholder: 'email address' })
+                                                    ),
+                                                    _react2.default.createElement('span', { className: 'help-block' }),
+                                                    _react2.default.createElement(
+                                                        'div',
+                                                        { className: 'input-group' },
+                                                        _react2.default.createElement('input', { type: 'password', className: 'form-control middle', name: 'password', placeholder: 'Password' })
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        null,
+                                                        '\xA0\xA0\xA0'
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        null,
+                                                        '\xA0\xA0\xA0'
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        'button',
+                                                        { className: 'btn btn-lg btn-primary btn-block submit-modal marg', type: 'submit' },
+                                                        'Login'
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Nav;
 }(_react2.default.Component);
 
 exports.default = Nav;
@@ -11931,8 +12093,8 @@ module.exports = isTextInputElement;
 
 
 var ExecutionEnvironment = __webpack_require__(7);
-var escapeTextContentForBrowser = __webpack_require__(42);
-var setInnerHTML = __webpack_require__(43);
+var escapeTextContentForBrowser = __webpack_require__(43);
+var setInnerHTML = __webpack_require__(44);
 
 /**
  * Set the textContent property of a node, ensuring that whitespace is preserved
@@ -13835,6 +13997,11 @@ exports.default = _react2.default.createElement(
   _react2.default.createElement(_reactRouter.IndexRoute, { component: _home2.default }),
   _react2.default.createElement(
     _reactRouter.Route,
+    { path: 'home_detail', component: _home_detail2.default },
+    ' '
+  ),
+  _react2.default.createElement(
+    _reactRouter.Route,
     { path: 'province_detail', component: _province_detail2.default },
     ' '
   ),
@@ -13871,7 +14038,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(8);
 
-var _card = __webpack_require__(44);
+var _card = __webpack_require__(36);
 
 var _card2 = _interopRequireDefault(_card);
 
@@ -13964,12 +14131,7 @@ var ActivityDetail = function (_React$Component) {
                         )
                     )
                 ),
-                _react2.default.createElement(_card2.default, { line: 'Recommend' }),
-                _react2.default.createElement(
-                    _reactRouter.Link,
-                    { to: 'province_detail' },
-                    'go page prov'
-                )
+                _react2.default.createElement(_card2.default, { topic: 'Recommend' })
             );
         }
     }]);
@@ -14078,7 +14240,7 @@ exports.default = ActivityDetailCard;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -14116,29 +14278,30 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var App = function (_React$Component) {
-  _inherits(App, _React$Component);
+    _inherits(App, _React$Component);
 
-  function App() {
-    _classCallCheck(this, App);
+    function App() {
+        _classCallCheck(this, App);
 
-    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
-  }
-
-  _createClass(App, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: 'bg-light-gray' },
-        _react2.default.createElement(_header2.default, null),
-        _react2.default.createElement(_nav2.default, null),
-        this.props.children,
-        _react2.default.createElement(_footer2.default, null)
-      );
+        return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
     }
-  }]);
 
-  return App;
+    _createClass(App, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'bg-light-gray' },
+                _react2.default.createElement(_header2.default, null),
+                _react2.default.createElement(_nav2.default, null),
+                ' ',
+                this.props.children,
+                _react2.default.createElement(_footer2.default, null)
+            );
+        }
+    }]);
+
+    return App;
 }(_react2.default.Component);
 
 exports.default = App;
@@ -14340,7 +14503,7 @@ exports.default = Comment;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -14364,46 +14527,46 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Footer = function (_React$Component) {
-  _inherits(Footer, _React$Component);
+    _inherits(Footer, _React$Component);
 
-  function Footer() {
-    _classCallCheck(this, Footer);
+    function Footer() {
+        _classCallCheck(this, Footer);
 
-    return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
-  }
-
-  _createClass(Footer, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-          'footer',
-          null,
-          _react2.default.createElement(
-            'div',
-            { className: 'container' },
-            _react2.default.createElement(
-              'div',
-              { className: 'row' },
-              _react2.default.createElement(
-                'div',
-                { className: 'col-md-4' },
-                _react2.default.createElement(
-                  'span',
-                  { className: 'copyright' },
-                  'MileStyle Copyright \xA9 2017'
-                )
-              )
-            )
-          )
-        )
-      );
+        return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
     }
-  }]);
 
-  return Footer;
+    _createClass(Footer, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    'footer',
+                    null,
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'container' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'row' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'col-md-4' },
+                                _react2.default.createElement(
+                                    'span',
+                                    { className: 'copyright' },
+                                    'MileStyle Copyright \xA9 2017'
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Footer;
 }(_react2.default.Component);
 
 exports.default = Footer;
@@ -14416,7 +14579,7 @@ exports.default = Footer;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -14436,84 +14599,75 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Header = function (_React$Component) {
-  _inherits(Header, _React$Component);
+    _inherits(Header, _React$Component);
 
-  function Header() {
-    _classCallCheck(this, Header);
+    function Header() {
+        _classCallCheck(this, Header);
 
-    return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
-  }
-
-  _createClass(Header, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-          'div',
-          { id: 'carousel', className: 'carousel slide carousel-fade', 'data-ride': 'carousel' },
-          _react2.default.createElement(
-            'ol',
-            { className: 'carousel-indicators' },
-            _react2.default.createElement('li', { 'data-target': '#carousel', 'data-slide-to': '0', className: 'active' }),
-            _react2.default.createElement('li', { 'data-target': '#carousel', 'data-slide-to': '1' }),
-            _react2.default.createElement('li', { 'data-target': '#carousel', 'data-slide-to': '2' })
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'carousel-inner' },
-            _react2.default.createElement(
-              'div',
-              { className: 'active item' },
-              _react2.default.createElement('img', { src: 'http://www.baankrupu.com/wp-content/uploads/2015/12/ampawa1.jpg' })
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'item' },
-              _react2.default.createElement('img', { src: 'https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAiXAAAAJDE4MDc2MGY3LTZhM2QtNDI3Zi04YmQzLThlMWIxOTNkZjIwNg.jpg' })
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'item' },
-              _react2.default.createElement('img', { src: 'https://upload.wikimedia.org/wikipedia/commons/f/f6/Bangkok_skytrain_sunset.jpg' })
-            )
-          ),
-          _react2.default.createElement('a', { className: 'carousel-control left', href: '#carousel', 'data-slide': 'prev' }),
-          _react2.default.createElement('a', { className: 'carousel-control right', href: '#carousel', 'data-slide': 'next' })
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'hero' },
-          _react2.default.createElement(
-            'hgroup',
-            null,
-            _react2.default.createElement(
-              'h1',
-              null,
-              'Milestyle'
-            ),
-            _react2.default.createElement(
-              'h3',
-              null,
-              'Activity Hobby Experience'
-            )
-          ),
-          _react2.default.createElement(
-            'a',
-            { className: 'page-scroll', href: '#portfolio' },
-            _react2.default.createElement(
-              'button',
-              { className: 'btn btn-hero btn-lg', role: 'button' },
-              'See all Activity'
-            )
-          )
-        )
-      );
+        return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
     }
-  }]);
 
-  return Header;
+    _createClass(Header, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    'div',
+                    { id: 'carousel', className: 'carousel slide carousel-fade', 'data-ride': 'carousel' },
+                    _react2.default.createElement(
+                        'ol',
+                        { className: 'carousel-indicators' },
+                        _react2.default.createElement('li', { 'data-target': '#carousel', 'data-slide-to': '0', className: 'active' }),
+                        _react2.default.createElement('li', { 'data-target': '#carousel', 'data-slide-to': '1' }),
+                        _react2.default.createElement('li', { 'data-target': '#carousel', 'data-slide-to': '2' })
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'carousel-inner' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'active item' },
+                            _react2.default.createElement('img', { src: 'http://www.baankrupu.com/wp-content/uploads/2015/12/ampawa1.jpg' })
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'item' },
+                            _react2.default.createElement('img', { src: 'https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAiXAAAAJDE4MDc2MGY3LTZhM2QtNDI3Zi04YmQzLThlMWIxOTNkZjIwNg.jpg' })
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'item' },
+                            _react2.default.createElement('img', { src: 'https://upload.wikimedia.org/wikipedia/commons/f/f6/Bangkok_skytrain_sunset.jpg' })
+                        )
+                    ),
+                    _react2.default.createElement('a', { className: 'carousel-control left', href: '#carousel', 'data-slide': 'prev' }),
+                    _react2.default.createElement('a', { className: 'carousel-control right', href: '#carousel', 'data-slide': 'next' })
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'hero' },
+                    _react2.default.createElement(
+                        'hgroup',
+                        null,
+                        _react2.default.createElement(
+                            'h1',
+                            null,
+                            'Milestyle'
+                        ),
+                        _react2.default.createElement(
+                            'h3',
+                            null,
+                            'Activity Hobby Experience'
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Header;
 }(_react2.default.Component);
 
 exports.default = Header;
@@ -14545,158 +14699,158 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var ProvCard = function (_React$Component) {
-    _inherits(ProvCard, _React$Component);
+var ProvCard2 = function (_React$Component) {
+    _inherits(ProvCard2, _React$Component);
 
-    function ProvCard() {
-        _classCallCheck(this, ProvCard);
+    function ProvCard2() {
+        _classCallCheck(this, ProvCard2);
 
-        return _possibleConstructorReturn(this, (ProvCard.__proto__ || Object.getPrototypeOf(ProvCard)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (ProvCard2.__proto__ || Object.getPrototypeOf(ProvCard2)).apply(this, arguments));
     }
 
-    _createClass(ProvCard, [{
+    _createClass(ProvCard2, [{
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
                 'div',
                 null,
                 _react2.default.createElement(
-                    'section',
-                    { id: 'portfolio' },
+                    'div',
+                    { className: 'container' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'container' },
+                        { className: 'row' },
                         _react2.default.createElement(
                             'div',
-                            { className: 'row' },
+                            { className: 'our-listing owl-carousel' },
                             _react2.default.createElement(
                                 'div',
-                                { 'class': 'col-lg-8 col-lg-offset-2' },
+                                { className: 'list-item' },
                                 _react2.default.createElement(
-                                    'h2',
-                                    null,
-                                    'Most Province'
-                                ),
-                                _react2.default.createElement(
-                                    'table',
-                                    null,
+                                    'div',
+                                    { className: 'list-thumb' },
                                     _react2.default.createElement(
-                                        'tr',
-                                        null,
+                                        _reactRouter.Link,
+                                        { to: 'province_detail' },
+                                        _react2.default.createElement('img', { src: 'http://www.sawasdee-hotels.com/pattaya/siam_sawasdee/images/hotel.jpg', alt: 'destination 1' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'title' },
                                         _react2.default.createElement(
-                                            'td',
+                                            'span',
                                             null,
-                                            _react2.default.createElement(
-                                                _reactRouter.Link,
-                                                { to: '/province_detail' },
-                                                '  ',
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { className: 'card' },
-                                                    _react2.default.createElement(
-                                                        'div',
-                                                        { className: 'card-image' },
-                                                        _react2.default.createElement('img', { className: 'img-responsive', src: 'http://www.sawasdee-hotels.com/pattaya/siam_sawasdee/images/hotel.jpg' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            { className: 'card-title' },
-                                                            'Bangkok'
-                                                        )
-                                                    )
-                                                )
-                                            )
-                                        ),
+                                            'Bangkok'
+                                        )
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'list-item' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'list-thumb' },
+                                    _react2.default.createElement(
+                                        _reactRouter.Link,
+                                        { to: 'province_detail' },
+                                        _react2.default.createElement('img', { src: 'http://www.artterracotta.com/images/img01.png', alt: 'destination 1' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'title' },
                                         _react2.default.createElement(
-                                            'td',
+                                            'span',
                                             null,
-                                            _react2.default.createElement(
-                                                _reactRouter.Link,
-                                                { to: '/province_detail' },
-                                                ' ',
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { className: 'card' },
-                                                    _react2.default.createElement(
-                                                        'div',
-                                                        { className: 'card-image' },
-                                                        _react2.default.createElement('img', { className: 'img-responsive', src: 'http://www.artterracotta.com/images/img01.png' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            { className: 'card-title' },
-                                                            'Chiang Mai'
-                                                        )
-                                                    )
-                                                )
-                                            )
-                                        ),
+                                            'Chiangmai'
+                                        )
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'list-item' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'list-thumb' },
+                                    _react2.default.createElement(
+                                        _reactRouter.Link,
+                                        { to: 'province_detail' },
+                                        _react2.default.createElement('img', { src: 'https://images.trvl-media.com/hotels/2000000/1850000/1849100/1849012/1849012_130_b.jpg', alt: 'destination 1' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'title' },
                                         _react2.default.createElement(
-                                            'td',
+                                            'span',
                                             null,
-                                            _react2.default.createElement(
-                                                _reactRouter.Link,
-                                                { to: '/province_detail' },
-                                                '   ',
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { className: 'card' },
-                                                    _react2.default.createElement(
-                                                        'div',
-                                                        { className: 'card-image' },
-                                                        _react2.default.createElement('img', { className: 'img-responsive', src: 'https://images.trvl-media.com/hotels/2000000/1850000/1849100/1849012/1849012_130_b.jpg' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            { className: 'card-title' },
-                                                            'Pattaya'
-                                                        )
-                                                    )
-                                                )
-                                            )
-                                        ),
+                                            'Pattaya'
+                                        )
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'list-item' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'list-thumb' },
+                                    _react2.default.createElement(
+                                        _reactRouter.Link,
+                                        { to: 'province_detail' },
+                                        _react2.default.createElement('img', { src: 'https://media.expedia.com/hotels/1000000/530000/527800/527737/527737_17_b.jpg', alt: 'destination 1' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'title' },
                                         _react2.default.createElement(
-                                            'td',
+                                            'span',
                                             null,
-                                            _react2.default.createElement(
-                                                _reactRouter.Link,
-                                                { to: '/province_detail' },
-                                                ' ',
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { className: 'card' },
-                                                    _react2.default.createElement(
-                                                        'div',
-                                                        { className: 'card-image' },
-                                                        _react2.default.createElement('img', { className: 'img-responsive', src: 'https://media.expedia.com/hotels/1000000/530000/527800/527737/527737_17_b.jpg' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            { className: 'card-title' },
-                                                            'Phuket'
-                                                        )
-                                                    )
-                                                )
-                                            )
-                                        ),
+                                            'Phuket'
+                                        )
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'list-item' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'list-thumb' },
+                                    _react2.default.createElement(
+                                        _reactRouter.Link,
+                                        { to: 'province_detail' },
+                                        _react2.default.createElement('img', { src: 'https://yooniqimages.blob.core.windows.net/yooniqimages-data-storage-resizedimagefilerepository/List/20957/dfdbfc19-d3ae-4e61-b113-7051115ecb99/YooniqImages_209579897.jpg', alt: 'destination 1' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'title' },
                                         _react2.default.createElement(
-                                            'td',
+                                            'span',
                                             null,
-                                            _react2.default.createElement(
-                                                _reactRouter.Link,
-                                                { to: '/province_detail' },
-                                                '   ',
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { className: 'card' },
-                                                    _react2.default.createElement(
-                                                        'div',
-                                                        { className: 'card-image' },
-                                                        _react2.default.createElement('img', { className: 'img-responsive', src: 'https://yooniqimages.blob.core.windows.net/yooniqimages-data-storage-resizedimagefilerepository/List/20957/dfdbfc19-d3ae-4e61-b113-7051115ecb99/YooniqImages_209579897.jpg' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            { className: 'card-title' },
-                                                            'Ayutthaya'
-                                                        )
-                                                    )
-                                                )
-                                            )
+                                            'Ayutthaya'
+                                        )
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'list-item' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'list-thumb' },
+                                    _react2.default.createElement(
+                                        _reactRouter.Link,
+                                        { to: 'province_detail' },
+                                        _react2.default.createElement('img', { src: 'http://us.123rf.com/450wm/anekoho/anekoho1203/anekoho120300142/12847637-erawan-waterfall-deep-forest-waterfall-in-kanchanaburi-thailand.jpg?ver=6', alt: 'destination 1' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'title' },
+                                        _react2.default.createElement(
+                                            'span',
+                                            null,
+                                            'Kanchanaburi'
                                         )
                                     )
                                 )
@@ -14708,10 +14862,10 @@ var ProvCard = function (_React$Component) {
         }
     }]);
 
-    return ProvCard;
+    return ProvCard2;
 }(_react2.default.Component);
 
-exports.default = ProvCard;
+exports.default = ProvCard2;
 
 /***/ }),
 /* 129 */
@@ -14721,7 +14875,7 @@ exports.default = ProvCard;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -14732,7 +14886,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(8);
 
-var _card = __webpack_require__(44);
+var _card = __webpack_require__(36);
 
 var _card2 = _interopRequireDefault(_card);
 
@@ -14745,130 +14899,75 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var ProvinceDetail = function (_React$Component) {
-  _inherits(ProvinceDetail, _React$Component);
+    _inherits(ProvinceDetail, _React$Component);
 
-  function ProvinceDetail() {
-    _classCallCheck(this, ProvinceDetail);
+    function ProvinceDetail() {
+        _classCallCheck(this, ProvinceDetail);
 
-    return _possibleConstructorReturn(this, (ProvinceDetail.__proto__ || Object.getPrototypeOf(ProvinceDetail)).apply(this, arguments));
-  }
-
-  _createClass(ProvinceDetail, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: 'marg' },
-        _react2.default.createElement(
-          'div',
-          { className: 'container' },
-          _react2.default.createElement(
-            'h1',
-            { className: 'middle' },
-            'Province Detail'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'btn-group marg' },
-            _react2.default.createElement(
-              'a',
-              { className: 'btn dropdown-toggle black', 'data-toggle': 'dropdown', href: '#' },
-              'Action',
-              _react2.default.createElement('span', { className: 'caret' })
-            ),
-            _react2.default.createElement(
-              'ul',
-              { className: 'dropdown-menu' },
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'a',
-                  { href: '#' },
-                  'Adventure'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'a',
-                  { href: '#' },
-                  'Music'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'a',
-                  { href: '#' },
-                  'Sport'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'a',
-                  { href: '#' },
-                  'Cooking'
-                )
-              )
-            )
-          )
-        ),
-        _react2.default.createElement(_card2.default, { line: 'Sport' }),
-        _react2.default.createElement(_card2.default, { line: 'Party' }),
-        _react2.default.createElement(_card2.default, { line: 'All Activity' }),
-        _react2.default.createElement(
-          'section',
-          { className: 'bg-light-gray' },
-          _react2.default.createElement(
-            'nav',
-            { 'aria-label': '...' },
-            _react2.default.createElement(
-              'ul',
-              { className: 'pager' },
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'a',
-                  { href: '#' },
-                  _react2.default.createElement(
-                    'h4',
-                    null,
-                    'Previous'
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'a',
-                  { href: '#' },
-                  _react2.default.createElement(
-                    'h4',
-                    null,
-                    'Next'
-                  )
-                )
-              )
-            )
-          )
-        ),
-        _react2.default.createElement(
-          _reactRouter.Link,
-          { to: '/activity_detail' },
-          'go page Acc'
-        )
-      );
+        return _possibleConstructorReturn(this, (ProvinceDetail.__proto__ || Object.getPrototypeOf(ProvinceDetail)).apply(this, arguments));
     }
-  }]);
 
-  return ProvinceDetail;
+    _createClass(ProvinceDetail, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'marg' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'container' },
+                    _react2.default.createElement(
+                        'h2',
+                        { className: 'middle' },
+                        'Province Detail'
+                    )
+                ),
+                _react2.default.createElement(_card2.default, { topic: 'Sport' }),
+                _react2.default.createElement(_card2.default, { topic: 'Party' }),
+                _react2.default.createElement(_card2.default, { topic: 'All Activity' }),
+                _react2.default.createElement(
+                    'section',
+                    { className: 'bg-light-gray' },
+                    _react2.default.createElement(
+                        'nav',
+                        { 'aria-label': '...' },
+                        _react2.default.createElement(
+                            'ul',
+                            { className: 'pager' },
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                _react2.default.createElement(
+                                    'a',
+                                    { href: '#' },
+                                    _react2.default.createElement(
+                                        'h4',
+                                        null,
+                                        'Previous'
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                _react2.default.createElement(
+                                    'a',
+                                    { href: '#' },
+                                    _react2.default.createElement(
+                                        'h4',
+                                        null,
+                                        'Next'
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return ProvinceDetail;
 }(_react2.default.Component);
 
 exports.default = ProvinceDetail;
@@ -15703,7 +15802,7 @@ var _warning2 = _interopRequireDefault(_warning);
 
 var _LocationUtils = __webpack_require__(23);
 
-var _DOMUtils = __webpack_require__(37);
+var _DOMUtils = __webpack_require__(38);
 
 var _DOMStateStorage = __webpack_require__(82);
 
@@ -15883,7 +15982,7 @@ var _RefreshProtocol = __webpack_require__(146);
 
 var RefreshProtocol = _interopRequireWildcard(_RefreshProtocol);
 
-var _DOMUtils = __webpack_require__(37);
+var _DOMUtils = __webpack_require__(38);
 
 var _createHistory = __webpack_require__(48);
 
@@ -15979,7 +16078,7 @@ var _invariant2 = _interopRequireDefault(_invariant);
 
 var _ExecutionEnvironment = __webpack_require__(47);
 
-var _DOMUtils = __webpack_require__(37);
+var _DOMUtils = __webpack_require__(38);
 
 var _HashProtocol = __webpack_require__(145);
 
@@ -16139,7 +16238,7 @@ var _createHistory = __webpack_require__(48);
 
 var _createHistory2 = _interopRequireDefault(_createHistory);
 
-var _Actions = __webpack_require__(36);
+var _Actions = __webpack_require__(37);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -17900,7 +17999,7 @@ module.exports = DefaultEventPluginOrder;
 
 var EventPropagators = __webpack_require__(31);
 var ReactDOMComponentTree = __webpack_require__(6);
-var SyntheticMouseEvent = __webpack_require__(40);
+var SyntheticMouseEvent = __webpack_require__(41);
 
 var eventTypes = {
   mouseEnter: {
@@ -19552,8 +19651,8 @@ var DOMNamespaces = __webpack_require__(51);
 var DOMProperty = __webpack_require__(17);
 var DOMPropertyOperations = __webpack_require__(87);
 var EventPluginHub = __webpack_require__(30);
-var EventPluginRegistry = __webpack_require__(38);
-var ReactBrowserEventEmitter = __webpack_require__(39);
+var EventPluginRegistry = __webpack_require__(39);
+var ReactBrowserEventEmitter = __webpack_require__(40);
 var ReactDOMComponentFlags = __webpack_require__(88);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactDOMInput = __webpack_require__(172);
@@ -19565,7 +19664,7 @@ var ReactMultiChild = __webpack_require__(191);
 var ReactServerRenderingTransaction = __webpack_require__(196);
 
 var emptyFunction = __webpack_require__(12);
-var escapeTextContentForBrowser = __webpack_require__(42);
+var escapeTextContentForBrowser = __webpack_require__(43);
 var invariant = __webpack_require__(1);
 var isEventSupported = __webpack_require__(63);
 var shallowEqual = __webpack_require__(45);
@@ -21499,7 +21598,7 @@ var DOMChildrenOperations = __webpack_require__(50);
 var DOMLazyTree = __webpack_require__(24);
 var ReactDOMComponentTree = __webpack_require__(6);
 
-var escapeTextContentForBrowser = __webpack_require__(42);
+var escapeTextContentForBrowser = __webpack_require__(43);
 var invariant = __webpack_require__(1);
 var validateDOMNesting = __webpack_require__(65);
 
@@ -21971,7 +22070,7 @@ module.exports = {
 
 
 var DOMProperty = __webpack_require__(17);
-var EventPluginRegistry = __webpack_require__(38);
+var EventPluginRegistry = __webpack_require__(39);
 var ReactComponentTreeHook = __webpack_require__(10);
 
 var warning = __webpack_require__(2);
@@ -22458,7 +22557,7 @@ module.exports = ReactDebugTool;
 var _assign = __webpack_require__(5);
 
 var ReactUpdates = __webpack_require__(13);
-var Transaction = __webpack_require__(41);
+var Transaction = __webpack_require__(42);
 
 var emptyFunction = __webpack_require__(12);
 
@@ -22886,7 +22985,7 @@ var EventPluginHub = __webpack_require__(30);
 var EventPluginUtils = __webpack_require__(52);
 var ReactComponentEnvironment = __webpack_require__(55);
 var ReactEmptyComponent = __webpack_require__(90);
-var ReactBrowserEventEmitter = __webpack_require__(39);
+var ReactBrowserEventEmitter = __webpack_require__(40);
 var ReactHostComponent = __webpack_require__(92);
 var ReactUpdates = __webpack_require__(13);
 
@@ -23609,10 +23708,10 @@ var _assign = __webpack_require__(5);
 
 var CallbackQueue = __webpack_require__(86);
 var PooledClass = __webpack_require__(20);
-var ReactBrowserEventEmitter = __webpack_require__(39);
+var ReactBrowserEventEmitter = __webpack_require__(40);
 var ReactInputSelection = __webpack_require__(93);
 var ReactInstrumentation = __webpack_require__(11);
-var Transaction = __webpack_require__(41);
+var Transaction = __webpack_require__(42);
 var ReactUpdateQueue = __webpack_require__(58);
 
 /**
@@ -23886,7 +23985,7 @@ module.exports = ReactRef;
 var _assign = __webpack_require__(5);
 
 var PooledClass = __webpack_require__(20);
-var Transaction = __webpack_require__(41);
+var Transaction = __webpack_require__(42);
 var ReactInstrumentation = __webpack_require__(11);
 var ReactServerUpdateQueue = __webpack_require__(197);
 
@@ -24657,7 +24756,7 @@ var SyntheticClipboardEvent = __webpack_require__(203);
 var SyntheticEvent = __webpack_require__(15);
 var SyntheticFocusEvent = __webpack_require__(206);
 var SyntheticKeyboardEvent = __webpack_require__(208);
-var SyntheticMouseEvent = __webpack_require__(40);
+var SyntheticMouseEvent = __webpack_require__(41);
 var SyntheticDragEvent = __webpack_require__(205);
 var SyntheticTouchEvent = __webpack_require__(209);
 var SyntheticTransitionEvent = __webpack_require__(210);
@@ -25008,7 +25107,7 @@ module.exports = SyntheticCompositionEvent;
 
 
 
-var SyntheticMouseEvent = __webpack_require__(40);
+var SyntheticMouseEvent = __webpack_require__(41);
 
 /**
  * @interface DragEvent
@@ -25315,7 +25414,7 @@ module.exports = SyntheticTransitionEvent;
 
 
 
-var SyntheticMouseEvent = __webpack_require__(40);
+var SyntheticMouseEvent = __webpack_require__(41);
 
 /**
  * @interface WheelEvent
@@ -26113,7 +26212,7 @@ module.exports = getVendorPrefixedEventName;
 
 
 
-var escapeTextContentForBrowser = __webpack_require__(42);
+var escapeTextContentForBrowser = __webpack_require__(43);
 
 /**
  * Escapes attribute value to prevent scripting attacks.
@@ -29629,7 +29728,7 @@ function isActive(_ref, indexOnly, currentLocation, routes, params) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_lib_Actions__ = __webpack_require__(36);
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_lib_Actions__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_lib_Actions___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_history_lib_Actions__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);

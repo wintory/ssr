@@ -1,88 +1,110 @@
-import React,{Component} from 'react'
+import React, {Component} from 'react'
 import {Link} from 'react-router'
 
+export default class Nav extends React.Component {
+
+    render() {
+        return (
+            <div>
+                <nav className=" navbar navbar-default navbar-custom navbar-fixed-top navbar-inner">
+
+                    <div className="container">
+
+                        <div className="navbar-header page-scroll">
+                            <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span className="sr-only">Toggle navigation</span>
+                                Menu
+                                <i className="fa fa-bars"></i>
+                            </button>
+                            <Link to="home" className="navbar-brand page-scroll">MileStyle</Link>
+                        </div>
+                        <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul className="nav navbar-nav navbar-right">
+                                <li className="hidden">
+                                    <Link to="*">Login</Link>
+                                </li>
+                                <li>
+                                    <Link to="home">
+                                        <h4>Home</h4>
+                                    </Link>
+                                </li>
+                                <li data-toggle="modal" data-target="#myModal">
+                                    <Link to="">
+                                        <h4>Login</h4>
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </nav>
+                <div className="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div className="modal-dialog" role="document">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <div className="container">
+
+                                    <div className="omb_login ">
+
+                                        <div className="row omb_row-sm-offset-3 omb_socialButtons marg">
+                                          <h2 className="omb_authTitle">Login or Sign up
+                                          </h2>
+                                            <div className=" col-xs-4 col-sm-2">
+                                                <a href="#" className="btn btn-lg btn-block omb_btn-facebook">
+                                                    <i className="fa fa-facebook visible-xs"></i>
+                                                    <span className="hidden-xs">Facebook</span>
+                                                </a>
+                                            </div>
+                                            <div className="col-xs-4 col-sm-2 ">
+                                                <a href="#" className="btn btn-lg btn-block omb_btn-twitter">
+                                                    <i className="fa fa-twitter visible-xs"></i>
+                                                    <span className="hidden-xs">Twitter</span>
+                                                </a>
+                                            </div>
+                                            <div className="col-xs-4 col-sm-2 ">
+                                                <a href="#" className="btn btn-lg btn-block omb_btn-google">
+                                                    <i className="fa fa-google-plus visible-xs"></i>
+                                                    <span className="hidden-xs">Google+</span>
+                                                </a>
+                                            </div>
+                                        </div>
 
 
-export default class Nav extends React.Component{
+
+                                        <div className="row omb_row-sm-offset-3">
+                                            <div className="col-xs-12 col-sm-6">
+                                                <form className="omb_loginForm" action="" autocomplete="off" method="POST">
+                                                    <div className="input-group">
+                                                        <input type="text" className="form-control middle" name="username" placeholder="email address"/>
+                                                    </div>
+                                                    <span className="help-block"></span>
+
+                                                    <div className="input-group">
+                                                        <input type="password" className="form-control middle" name="password" placeholder="Password"/>
+                                                    </div>
+
+                                                    <span>&nbsp;&nbsp;&nbsp;</span>
+                                                    <span>&nbsp;&nbsp;&nbsp;</span>
+
+                                                    <button className="btn btn-lg btn-primary btn-block submit-modal marg" type="submit">Login</button>
+                                                </form>
 
 
+                                            </div>
+                                        </div>
 
-  render(){
-    return (
-      <div>
-        <nav id="mainNav" className=" navbar navbar-default navbar-custom navbar-fixed-top">
 
-        <div className="container">
+                                    </div>
+                                </div>
 
-            <div className="navbar-header page-scroll">
-                <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span className="sr-only">Toggle navigation</span> Menu <i className="fa fa-bars"></i>
-                </button>
-                <Link to="home" className="navbar-brand page-scroll" >MileStyle</Link>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-<form className = "col-md-1 navbar-form navbar-left" role = "search" > <div className="form-group">
-    <input type="text" className="form-control" placeholder="Search"/>
-</div> <button type = "submit" className = "btn btn-default" > search </button>
-</form >
-            <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul className="nav navbar-nav navbar-right">
-                    <li className="hidden">
-                        <Link to="*">Login</Link>
-                    </li>
-                    <li>
-                    <Link to="home">Home</Link>
-                    </li>
-                    <li data-toggle="modal" data-target="#myModal">
-                        <Link to="">Login</Link>
-                    </li>
-                </ul>
-            </div>
 
-        </div>
-
-    </nav>
-    <div className="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div className="modal-dialog" role="document">
-    <div className="modal-content">
-      <div className="modal-header">
-        <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 className="modal-title" id="myModalLabel">Login</h4>
-      </div>
-      <div className="modal-body">
-        <a className="btn btn-block btn-social btn-lg btn-facebook">
-   <span className="fa fa-facebook"></span> Sign in with Facebook
-        </a>
-        <a className="btn btn-block btn-social btn-lg btn-google">
-   <span className="fa fa-google"></span> Sign in with Google+
-        </a>
-        <span>&nbsp;&nbsp;</span>
-        <span>&nbsp;&nbsp;</span>
-        <form>
-  <fieldset >
-    <div className="form-group">
-      <label >Email</label>
-      <input type="text" className="form-control"/>
-    </div>
-    <div className="form-group">
-      <label >Password</label>
-      <input type="password" className="form-control" />
-    </div>
-    <div className="form-group">
-    <button type="button" className="btn btn-default" >Register</button>
-    <button type="submit"  className="btn btn-default">Submit</button>
-    </div>
-  </fieldset>
-</form>
-      </div>
-
-      <div className="modal-footer">
-        <button type="button" className="btn btn-primary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-      </div>
-
-  );
-  }
+        );
+    }
 }
