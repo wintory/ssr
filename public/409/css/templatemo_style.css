@@ -122,8 +122,13 @@ textarea {
     vertical-align: top;
 }
 
+@font-face {
+font-family: 'DonauNeue';
+src: url('./DonauNeue.otf');
+}
+
 body {
-    font-family: "Open Sans",Arial,sans-serif;
+    font-family: 'DonauNeue',"Open Sans",Arial,sans-serif;
     font-size: 13px;
     line-height: 19px;
     font-weight: 300;

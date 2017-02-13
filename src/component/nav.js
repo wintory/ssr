@@ -24,9 +24,7 @@ export default class Nav extends React.Component {
                                     <Link to="*">Login</Link>
                                 </li>
                                 <li>
-                                    <Link to="home">
-                                        <h4>Home</h4>
-                                    </Link>
+                                    <Link to="*"><h4>Home</h4></Link>
                                 </li>
                                 <li data-toggle="modal" data-target="#myModal">
                                     <Link to="">

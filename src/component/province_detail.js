@@ -7,8 +7,7 @@ class ProvinceDetail extends React.Component {
         return (
             <div className="marg">
                 <div className="container">
-
-                    <h2 className="middle">Province Detail</h2>
+                  
 
                 </div>
 

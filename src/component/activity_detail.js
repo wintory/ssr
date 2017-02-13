@@ -9,8 +9,9 @@ class ActivityDetail extends React.Component {
             <div className="marg">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-12 text-center">
+                        <div className="col-lg-12 text-center marg">
                             <h2 className="section-heading">Activity Detail</h2>
+
                         </div>
                     </div>
                     <div className="row">
@@ -23,13 +24,11 @@ class ActivityDetail extends React.Component {
                                     </div>
                                     <div className="col-md-3 margin">
                                         <div className="form-group">
-                                            <img src="https://s-media-cache-ak0.pinimg.com/originals/07/57/68/0757689ff6330249baa0ba43a4a78f97.jpg"/>
+                                            <img src="http://orleanshub.com/archived_images/news_photos_2015/110815_HG2752.jpg"/>
                                         </div>
                                         &nbsp;&nbsp;&nbsp;
-                                        <div className="col-lg-6 ">
-                                            <div id="success"></div>
-                                            <button type="submit" className="btn btn-xl ">Booking</button>
-                                        </div>
+
+                          
                                     </div>
 
                                 </div>

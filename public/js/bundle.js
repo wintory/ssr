@@ -9954,7 +9954,7 @@ var Nav = function (_React$Component) {
                                     null,
                                     _react2.default.createElement(
                                         _reactRouter.Link,
-                                        { to: 'home' },
+                                        { to: '*' },
                                         _react2.default.createElement(
                                             'h4',
                                             null,
@@ -14081,7 +14081,7 @@ var ActivityDetail = function (_React$Component) {
                         { className: 'row' },
                         _react2.default.createElement(
                             'div',
-                            { className: 'col-lg-12 text-center' },
+                            { className: 'col-lg-12 text-center marg' },
                             _react2.default.createElement(
                                 'h2',
                                 { className: 'section-heading' },
@@ -14112,19 +14112,9 @@ var ActivityDetail = function (_React$Component) {
                                         _react2.default.createElement(
                                             'div',
                                             { className: 'form-group' },
-                                            _react2.default.createElement('img', { src: 'https://s-media-cache-ak0.pinimg.com/originals/07/57/68/0757689ff6330249baa0ba43a4a78f97.jpg' })
+                                            _react2.default.createElement('img', { src: 'http://orleanshub.com/archived_images/news_photos_2015/110815_HG2752.jpg' })
                                         ),
-                                        '\xA0\xA0\xA0',
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'col-lg-6 ' },
-                                            _react2.default.createElement('div', { id: 'success' }),
-                                            _react2.default.createElement(
-                                                'button',
-                                                { type: 'submit', className: 'btn btn-xl ' },
-                                                'Booking'
-                                            )
-                                        )
+                                        '\xA0\xA0\xA0'
                                     )
                                 )
                             )
@@ -14199,24 +14189,24 @@ var ActivityDetailCard = function (_React$Component) {
                                     'div',
                                     { className: 'det' },
                                     _react2.default.createElement(
-                                        'h3',
+                                        'h4',
                                         null,
                                         'Location : Phuket'
                                     ),
                                     _react2.default.createElement(
-                                        'h3',
+                                        'h4',
                                         null,
                                         'Price : 7500 Baht'
                                     ),
                                     _react2.default.createElement(
-                                        'h3',
+                                        'h4',
                                         null,
                                         'Date: 13/9/2017'
                                     ),
                                     _react2.default.createElement(
-                                        'h4',
+                                        'span',
                                         null,
-                                        'Description: Fiction is a form of narrative, one of the four rhetorical modes of discourse. Fiction-writing also has modes: action, exposition, description, dialogue, summary, and transition (Morrell 2006, p. 127). Author Peter Selgin refers to methods, including action, dialogue, thoughts, summary, scenes, and description (Selgin 2007, p. 38). Currently, there is no consensus within the writing community regarding the number and composition of fiction-writing modes and their uses. Description is the fiction-writing mode for transmitting a mental image of the particulars of a story. Together with dialogue, narration, exposition, and summarization, description is one of the most widely recognized of the fiction-writing modes. As stated in Writing from A to Z, edited by Kirk Polking, description is more than the amassing of details; it is bringing something to life by carefully choosing and arranging words and phrases to produce the desired effect (Polking 1990, p. 106). The most appropriate and effective techniques for presenting description are a matter of ongoing discussion among writers and writing coaches.'
+                                        'Description: '
                                     )
                                 )
                             )
@@ -14913,15 +14903,7 @@ var ProvinceDetail = function (_React$Component) {
             return _react2.default.createElement(
                 'div',
                 { className: 'marg' },
-                _react2.default.createElement(
-                    'div',
-                    { className: 'container' },
-                    _react2.default.createElement(
-                        'h2',
-                        { className: 'middle' },
-                        'Province Detail'
-                    )
-                ),
+                _react2.default.createElement('div', { className: 'container' }),
                 _react2.default.createElement(_card2.default, { topic: 'Sport' }),
                 _react2.default.createElement(_card2.default, { topic: 'Party' }),
                 _react2.default.createElement(_card2.default, { topic: 'All Activity' }),
