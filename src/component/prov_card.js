@@ -76,3 +76,6 @@ export default class ProvCard extends React.Component {
 
                         </section>
                     </div>
+                  )
+                }
+              }

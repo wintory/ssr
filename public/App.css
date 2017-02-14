@@ -349,7 +349,7 @@ body,
 .carousel,
 .carousel-inner,
 .carousel-inner .item {
-    height: 500px;
+    height: 750px;
 }
 
 .item:nth-child(1) {
@@ -409,7 +409,7 @@ a .black{
     }
 
     .navbar-inner {
-        background-color: white;
+        background-color: inherit;;
     }
 
 

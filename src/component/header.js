@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router'
+import SearchBox from './searchbox'
 
 export default class Header extends React.Component {
     render() {
@@ -13,7 +14,7 @@ export default class Header extends React.Component {
                     </ol>
 
                     <div className="carousel-inner">
-                        <div className="active item"><img src="http://www.baankrupu.com/wp-content/uploads/2015/12/ampawa1.jpg"/></div>
+                        <div className="active item"><img src="http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1471360251/flight-BANGKOK0816.jpg?itok=PnVQD1HS"/></div>
                         <div className="item"><img src="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAiXAAAAJDE4MDc2MGY3LTZhM2QtNDI3Zi04YmQzLThlMWIxOTNkZjIwNg.jpg"/></div>
                         <div className="item"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Bangkok_skytrain_sunset.jpg"/></div>
                     </div>
@@ -25,6 +26,7 @@ export default class Header extends React.Component {
                     <hgroup>
                         <h1>Milestyle</h1>
                         <h3>Activity Hobby Experience</h3>
+                        <SearchBox />
                     </hgroup>
                 </div>
             </div>

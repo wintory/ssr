@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router'
-import Card2 from './card2'
+import Card from './card'
 import ActivityDetailCard from './activity_detail_card'
 import Comment from './comment'
 class ActivityDetail extends React.Component {
@@ -28,7 +28,7 @@ class ActivityDetail extends React.Component {
                                         </div>
                                         &nbsp;&nbsp;&nbsp;
 
-                          
+
                                     </div>
 
                                 </div>
