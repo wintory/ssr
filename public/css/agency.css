@@ -6,6 +6,7 @@
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  max-width: 100%;
 }
 .text-muted {
   color: #777777;
@@ -147,7 +148,7 @@ fieldset[disabled] .btn-xl.active {
   background-color: white;
 }
 .navbar-custom {
-  background-color: #222222;
+  background-color: inherit;;
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
@@ -158,7 +159,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-  color: #fec503;
+  color: #232629;
 }
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
@@ -173,7 +174,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #fed136;
+  background-color: red;
 }
 .navbar-custom .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;

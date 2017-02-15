@@ -6,19 +6,19 @@ import Comment from './comment'
 class ActivityDetail extends React.Component {
     render() {
         return (
-            <div className="marg">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12 text-center marg">
-                            <h2 className="section-heading">Activity Detail</h2>
+            <div className="marg *">
+                <div className="container *">
+                    <div className="row *">
+                        <div className="col-lg-12 text-center marg *">
+                            <h2 className="section-heading *">Activity Detail</h2>
 
                         </div>
                     </div>
-                    <div className="row">
-                        <div className="col-lg-12">
+                    <div className="row *">
+                        <div className="col-lg-12 *">
                             <form name="sentMessage" id="contactForm" novalidate>
-                                <div className="row">
-                                    <div className="col-md-6">
+                                <div className="row *">
+                                    <div className="col-md-6 *">
                                         <ActivityDetailCard/>
 
                                     </div>
@@ -37,7 +37,7 @@ class ActivityDetail extends React.Component {
                     </div>
                 </div>
 
-                <Card2 topic="Recommend"/>
+                <Card topic="Recommend"/>
             </div>
         )
     }

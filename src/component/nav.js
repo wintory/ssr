@@ -1,19 +1,20 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router'
+import SearchBox from './searchbox'
 
 export default class Nav extends React.Component {
 
     render() {
         return (
           <div>
-            <nav id="mainNav" className="navbar navbar-default navbar-custom navbar-fixed-top">
+            <nav id="mainNav" className="navbar navbar-custom navbar-fixed-top">
                 <div className="container">
 
                     <div className="navbar-header page-scroll">
                         <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                             <span className="sr-only">Toggle navigation</span> Menu <i className="fa fa-bars"></i>
                         </button>
-                        <a className="navbar-brand page-scroll" href="home_detail">MileStyle</a>
+                        <a className="navbar-brand page-scroll" href="#page-top">MileStyle</a>
                     </div>
 
 
@@ -23,10 +24,11 @@ export default class Nav extends React.Component {
                                 <a href="#page-top"></a>
                             </li>
                             <li>
-                                <a href="home_detail" className="btn btn-outlined">Login</a>
+                            <SearchBox/>
                             </li>
-
-
+                            <li>
+                                <a className="page-scroll" href="login">Login</a>
+                            </li>
                         </ul>
                     </div>
 

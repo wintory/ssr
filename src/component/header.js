@@ -1,35 +1,61 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router'
-import SearchBox from './searchbox'
+
 
 export default class Header extends React.Component {
     render() {
         return (
             <div>
-                <div id="carousel" className="carousel slide carousel-fade" data-ride="carousel">
-                    <ol className="carousel-indicators">
-                        <li data-target="#carousel" data-slide-to="0" className="active"></li>
-                        <li data-target="#carousel" data-slide-to="1"></li>
-                        <li data-target="#carousel" data-slide-to="2"></li>
-                    </ol>
+                <div className="fullscreenbanner-container">
+                  <div className="fullscreenbanner">
+                    <ul>
+                      <li data-transition="parallaxvertical" data-slotamount="5" data-masterspeed="700" data-title="Slide 1">
+                        <img src="img/home/slider/slider-01.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat"/>
+                        <div className="slider-caption container">
+                          <div className="tp-caption rs-caption-1 sft start"
+                            data-hoffset="0"
+                            data-y="270"
+                            data-speed="800"
+                            data-start="1000"
+                            data-easing="Back.easeInOut"
+                            data-endspeed="300">
+                            Activity Hobby Experience
+                            <span>MileStyle</span>
+                          </div>
+                          <div className="tp-caption rs-caption-2 sft"
+                            data-hoffset="0"
+                            data-y="400"
+                            data-speed="1000"
+                            data-start="1500"
+                            data-easing="Power4.easeOut"
+                            data-endspeed="300"
+                            data-endeasing="Power1.easeIn"
+                            data-captionhidden="off">
+                            We live in a wonderful world that is full of beauty,
+charm and adventure. There is no end to the adventures
+we can have if only we seek them with our eyes openco laboris nisi ut aliquip ex consequat.
+                          </div>
+                          <div className="tp-caption rs-caption-3 sft"
+                            data-hoffset="0"
+                            data-y="485"
+                            data-speed="800"
+                            data-start="2000"
+                            data-easing="Power4.easeOut"
+                            data-endspeed="300"
+                            data-endeasing="Power1.easeIn"
+                            data-captionhidden="off">
+                            <span className="page-scroll"><a target="_blank" href="http://goo.gl/lXpsqr" className="btn buttonCustomPrimary">Buy Now</a></span>
+                          </div>
+                        </div>
+                      </li>
 
-                    <div className="carousel-inner">
-                        <div className="active item"><img src="http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1471360251/flight-BANGKOK0816.jpg?itok=PnVQD1HS"/></div>
-                        <div className="item"><img src="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAiXAAAAJDE4MDc2MGY3LTZhM2QtNDI3Zi04YmQzLThlMWIxOTNkZjIwNg.jpg"/></div>
-                        <div className="item"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Bangkok_skytrain_sunset.jpg"/></div>
-                    </div>
 
-                    <a className="carousel-control left" href="#carousel" data-slide="prev"></a>
-                    <a className="carousel-control right" href="#carousel" data-slide="next"></a>
+                    </ul>
+                  </div>
                 </div>
-                <div className="hero">
-                    <hgroup>
-                        <h1>Milestyle</h1>
-                        <h3>Activity Hobby Experience</h3>
-                        <SearchBox />
-                    </hgroup>
-                </div>
-            </div>
+
+              </div>
+
         )
     }
 }

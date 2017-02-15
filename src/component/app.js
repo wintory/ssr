@@ -4,13 +4,15 @@ import Nav from './nav'
 import Header from './header'
 import {AppContainer} from 'react-hot-loader'
 import Footer from './footer'
+import StaticBox from './staticbox'
 
 export default class App extends React.Component {
     render() {
         return (
-            <div className="bg-light-gray">
+            <div>
               <Nav />
                 <Header/>
+                <StaticBox />
                 {this.props.children}
                 <Footer/>
 

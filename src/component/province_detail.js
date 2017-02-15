@@ -12,8 +12,7 @@ class ProvinceDetail extends React.Component {
                 </div>
 
                 <Card topic="Sport"/>
-                <Card topic="Party"/>
-                <Card topic="All Activity"/>
+            
                 <section className="bg-light-gray">
                     <nav aria-label="...">
                         <ul className="pager">
