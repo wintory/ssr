@@ -1,15 +1,17 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router'
-import ProvCard2 from './prov_card2'
-import Card2 from './card2'
+import ProvCard from './prov_card'
+import Card from './card'
+import StaticBox from './staticbox'
 
 export default class HomeDetail extends Component {
     render() {
         return (
             <div>
-                <ProvCard2/>
-                <Card2 topic="Activity Recommend"/>
+              <ProvCard />
+              <Card />
             </div>
+
         )
     }
 }

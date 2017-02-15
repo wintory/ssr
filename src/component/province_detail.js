@@ -1,19 +1,18 @@
 import React from 'react'
 import {Link} from 'react-router'
-import Card2 from './card2'
+import Card from './card'
 
 class ProvinceDetail extends React.Component {
     render() {
         return (
             <div className="marg">
                 <div className="container">
-                  
+
 
                 </div>
 
-                <Card2 topic="Sport"/>
-                <Card2 topic="Party"/>
-                <Card2 topic="All Activity"/>
+                <Card topic="Sport"/>
+            
                 <section className="bg-light-gray">
                     <nav aria-label="...">
                         <ul className="pager">
