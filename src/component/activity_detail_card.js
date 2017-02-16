@@ -4,23 +4,44 @@ import {Link} from 'react-router'
 export default class ActivityDetailCard extends React.Component {
     render() {
         return (
-            <div>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-sm-8">
-                            <div className="panel panel-white post panel-shadow">
-                                <div className="det">
-                                    <h4>Location : Phuket</h4>
-                                    <h4>Price : 7500 Baht</h4>
-                                    <h4>Date: 13/9/2017</h4>
-                                    <span>Description: </span>
+            <div >
 
+
+                    <div className="well">
+                        <div className="row ">
+
+                            <div className="col-xs-12 col-sm-6 col-lg-8">
+                                <div className="packageInfo">
+                                    <h4>Activity name</h4>
+                                    <dl className="dl-horizontal">
+                                        <dt>Location:</dt>
+                                        <dd>Maldives</dd>
+                                        <dt>Duration:</dt>
+                                        <dd></dd>
+                                        <dt>Available Seat:</dt>
+                                        <dd>30</dd>
+                                        <dt>Price:</dt>
+                                        <dd>
+                                            <span>6,500 Baht</span>
+                                        </dd>
+
+                                    </dl>
+
+                                </div>
+                            </div>
+                            <div className="col-xs-6 col-lg-4">
+                                <div className="packageInfo ">
+                                    <h4>MALDIVES TOUR</h4>
+                                    <p>3 Days Tour
+                                        <span>$6,500</span>
+                                    </p>
+                                    <a href="booking-1.html" className="btn buttonCustomPrimary">BOOK NOW</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+
 
         )
     }

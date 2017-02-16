@@ -1,28 +1,22 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router'
-import SearchBox from './searchbox'
 
-export default class Nav extends React.Component {
+export default class DetailNav extends React.Component {
 
 
 
     render() {
         return (
           <div>
-            <nav id="mainNav" className=" col-navbar navbar-custom navbar-fixed-top">
+            <nav id="mainNav" className="navbar navbar-fixed-top white">
                 <div className="container">
 
-                    <div className="navbar-header page-scroll margin">
+                    <div className="navbar-header page-scroll ">
                         <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                             <span className="sr-only">Toggle navigation</span> Menu <i className="fa fa-bars"></i>
                         </button>
                         <a className="navbar-brand page-scroll" href="home_detail">MileStyle</a>
                     </div>
-
-
-                      <div className="search-middle ">
-                        <SearchBox/>
-                      </div>
 
 
 

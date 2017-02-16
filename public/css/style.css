@@ -3303,7 +3303,7 @@ header {
   margin-bottom: 0;
 }
 .singlePackage .packageInfo .dl-horizontal dt {
-  text-align: left;
+  text-align: right;;
   color: #ff891e;
   float: left;
   text-transform: uppercase;

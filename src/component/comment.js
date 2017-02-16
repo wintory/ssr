@@ -5,7 +5,7 @@ export default class Comment extends React.Component {
     render() {
         return (
             <div>
-                <div className="container">
+                <div className="container ">
                     <div className="row">
                         <div className="col-sm-8">
                             <div className="panel panel-white post panel-shadow">
@@ -40,7 +40,7 @@ export default class Comment extends React.Component {
                         </div>
                     </div>
                 </div>
-            
+
         )
     }
 }

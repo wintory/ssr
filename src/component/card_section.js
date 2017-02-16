@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import Card from './card'
+import Card from './recommend_card'
 
 export default class CardSection extends Component{
 
@@ -29,10 +29,7 @@ export default class CardSection extends Component{
               <Card />
               <Card />
               <Card />
-              <Card />
-              <Card />
-              <Card />
-
+          
             </div>
                 </section>
                 </div>

@@ -3,6 +3,7 @@ import { Route , IndexRoute} from 'react-router'
 
 import ProvinceDetail from './component/province_detail'
 import ActivityDetail from './component/activity_detail'
+import ActivityDetail2 from './component/activity_detail2'
 import App from './component/app'
 import HomeDetail from './component/home_detail'
 
@@ -13,6 +14,7 @@ export default (
          <Route path="home_detail" component={HomeDetail}> </Route>
           <Route path="province_detail" component={ProvinceDetail}> </Route>
           <Route path="activity_detail" component={ActivityDetail} ></Route>
+          <Route path="activity_detail2" component={ActivityDetail2} ></Route>
           <Route path="*" component={HomeDetail}>
           </Route>
   </Route>

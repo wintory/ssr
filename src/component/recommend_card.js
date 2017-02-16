@@ -25,7 +25,7 @@ export default class Card extends React.Component {
                       <div className="col-sm-4 col-xs-12">
                         <div className="thumbnail deals">
                           <img src={activity_cover} alt="deal-image"/>
-                          <a href="single-package-right-sidebar.html" className="pageLink"></a>
+                          <a href="activity_detail" className="pageLink"></a>
                           <div className="discountInfo">
                             <ul className="list-inline rating homePage">
                               <li><i className="fa fa-star" aria-hidden="true"></i></li>
@@ -40,7 +40,7 @@ export default class Card extends React.Component {
                             </ul>
                           </div>
                           <div className="card-dest">
-                            <h4><a href="single-package-right-sidebar.html" className="captionTitle">{activity_name}</a></h4>
+                            <h4><a href="activity_detail" className="captionTitle">{activity_name}</a></h4>
                             <p>{activity_description}</p>
                           </div>
                         </div>
