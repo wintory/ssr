@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {Link} from 'react-router'
 
 export default class ProvCard extends React.Component {
+
     render() {
         return (
             <div>
@@ -10,8 +11,7 @@ export default class ProvCard extends React.Component {
                   <div className="row">
                     <div className="col-xs-12">
                       <div className="sectionTitle">
-                        <h2><span>Our Packages</span></h2>
-                        <p>Ut facilisis facilisis metus quis semper</p>
+                        <h2><span>Most Province in Thailand</span></h2>
                       </div>
                     </div>
                   </div>
@@ -20,9 +20,12 @@ export default class ProvCard extends React.Component {
                       <div className="filter-container isotopeFilters">
                         <ul className="list-inline filter">
                           <li className="active"><a href="#" data-filter="*">All Places</a></li>
-                          <li><a href="#" data-filter=".asia">Asia</a></li>
-                          <li><a href="#" data-filter=".america">America</a></li>
-                          <li><a href="#" data-filter=".africa">Africa</a></li>
+                          <li><a href="#" data-filter="Central">Central</a></li>
+                          <li><a href="#" data-filter="West">West</a></li>
+                          <li><a href="#" data-filter="North">North</a></li>
+                          <li><a href="#" data-filter="South">South</a></li>
+                          <li><a href="#" data-filter="East">East</a></li>
+                          <li><a href="#" data-filter="East">North East</a></li>
                         </ul>
                       </div>
                     </div>

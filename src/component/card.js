@@ -2,111 +2,53 @@ import React, {Component} from 'react'
 import {Link} from 'react-router'
 
 export default class Card extends React.Component {
+
+    constructor(props){
+      super(props)
+      this.state ={
+        activity_name : "aaaa",
+        activity_description : "aaa dest",
+        activity_title : "Activity you may know",
+        activity_price : 299,
+        activity_date : "12-12-2017",
+        activity_cover : "img/home/deal/deal-01.jpg"
+      }
+
+
+    }
+
     render() {
+      let {activity_title,activity_name,activity_description,activity_price,activity_date,activity_cover} = this.state
         return (
             <div>
-                <section id="portfolio">
-                    <div className="container">
-                        <h2>{this.props.line}</h2>
-                        <h3>{this.props.detail}</h3>
-                        <div className="row">
-                            <div className="col-lg-12 text-center"></div>
+
+                      <div className="col-sm-4 col-xs-12">
+                        <div className="thumbnail deals">
+                          <img src={activity_cover} alt="deal-image"/>
+                          <a href="single-package-right-sidebar.html" className="pageLink"></a>
+                          <div className="discountInfo">
+                            <ul className="list-inline rating homePage">
+                              <li><i className="fa fa-star" aria-hidden="true"></i></li>
+                              <li><i className="fa fa-star" aria-hidden="true"></i></li>
+                              <li><i className="fa fa-star" aria-hidden="true"></i></li>
+                              <li><i className="fa fa-star" aria-hidden="true"></i></li>
+                              <li><i className="fa fa-star" aria-hidden="true"></i></li>
+                            </ul>
+                            <ul className="list-inline duration">
+                              <li>{activity_price} Baht</li>
+                              <li>{activity_date}</li>
+                            </ul>
+                          </div>
+                          <div className="card-dest">
+                            <h4><a href="single-package-right-sidebar.html" className="captionTitle">{activity_name}</a></h4>
+                            <p>{activity_description}</p>
+                          </div>
                         </div>
-                        <div className="row">
-                            <div className="col-md-4 col-sm-6 portfolio-item">
-                                <a href="/activity_detail">
-                                    <div className="portfolio-hover">
-                                        <div className="portfolio-hover-content">
-                                            <i className="fa fa-plus fa-3x"></i>
-                                        </div>
-                                    </div>
-                                    <img src="http://www.getnowapp.com/wp-content/uploads/2016/04/healthy-cooking.jpg" className="img-responsive" alt=""/>
-                                </a>
-                                <div className="portfolio-caption">
-                                    <h4>Cooking</h4>
-                                    <p className="text-muted">Bangkok</p>
-                                    <p className="text-muted">1300 Baht</p>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-sm-6 portfolio-item">
-                                <a href="/activity_detail">
-                                    <div className="portfolio-hover">
-                                        <div className="portfolio-hover-content">
-                                            <i className="fa fa-plus fa-3x"></i>
-                                        </div>
-                                    </div>
-                                    <img src="http://timeout-test.candrholdings.com/media/content/normal/16746_J_Forest_Music_bar.jpg" className="img-responsive" alt=""/>
-                                </a>
-                                <div className="portfolio-caption">
-                                    <h4>Night Bar Club</h4>
-                                    <p className="text-muted">Bangkok</p>
-                                    <p className="text-muted">1000 Baht</p>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-sm-6 portfolio-item">
-                                <a href="/activity_detail">
-                                    <div className="portfolio-hover">
-                                        <div className="portfolio-hover-content">
-                                            <i className="fa fa-plus fa-3x"></i>
-                                        </div>
-                                    </div>
-                                    <img src="https://s-media-cache-ak0.pinimg.com/originals/b1/c7/62/b1c7620124391aba1154ca8288abab5b.jpg" className="img-responsive" alt=""/>
-                                </a>
-                                <div className="portfolio-caption">
-                                    <h4>Treehouse</h4>
-                                    <p className="text-muted">Pattaya</p>
-                                    <p className="text-muted">2700 Baht</p>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-sm-6 portfolio-item">
-                                <a href="activity_detail">
-                                    <div className="portfolio-hover">
-                                        <div className="portfolio-hover-content">
-                                            <i className="fa fa-plus fa-3x"></i>
-                                        </div>
-                                    </div>
-                                    <img src="http://pathwaytoaus.com/wp-content/uploads/2014/12/cafe-dupont-chef-at-the-dupont-circle-hotel_gallery_image.jpg" className="img-responsive" alt=""/>
-                                </a>
-                                <div className="portfolio-caption">
-                                    <h4>Chlef Training</h4>
-                                    <p className="text-muted">Bangkok</p>
-                                    <p className="text-muted">4200 Bath</p>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-sm-6 portfolio-item">
-                                <a href="activity_detail">
-                                    <div className="portfolio-hover">
-                                        <div className="portfolio-hover-content">
-                                            <i className="fa fa-plus fa-3x"></i>
-                                        </div>
-                                    </div>
-                                    <img src="http://cdn.snowkingmountain.com/wp-content/uploads/2015/10/couple-hiking-atop-snow-king-mountain-1024x683.jpg" className="img-responsive" alt=""/>
-                                </a>
-                                <div className="portfolio-caption">
-                                    <h4>Hiking</h4>
-                                    <p className="text-muted">ChiangMai</p>
-                                    <p className="text-muted">8500 Bath</p>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-sm-6 portfolio-item">
-                                <a href="activity_detail">
-                                    <div className="portfolio-hover">
-                                        <div className="portfolio-hover-content">
-                                            <i className="fa fa-plus fa-3x"></i>
-                                        </div>
-                                    </div>
-                                    <img src="http://muaythaicampsthailand.com/wp-content/uploads/2012/12/tiger-muay-thai.jpg" className="img-responsive" alt=""/>
-                                </a>
-                                <div className="portfolio-caption">
-                                    <h4>Muay Thai</h4>
-                                    <p className="text-muted">Bangkok</p>
-                                    <p className="text-muted">3500 Bath</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
+                      </div>
+
+                      </div>
+
+
         )
     }
 }

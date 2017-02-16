@@ -21,6 +21,8 @@ export default class StaticBox extends Component{
 
   }
 
+
+
   render(){
     let {user,activity,destination} = this.state
     return(

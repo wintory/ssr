@@ -43,8 +43,7 @@ we can have if only we seek them with our eyes openco laboris nisi ut aliquip ex
                             data-easing="Power4.easeOut"
                             data-endspeed="300"
                             data-endeasing="Power1.easeIn"
-                            data-captionhidden="off">
-                            <span className="page-scroll"><a target="_blank" href="http://goo.gl/lXpsqr" className="btn buttonCustomPrimary">Buy Now</a></span>
+                            data-captionhidden="off">                          
                           </div>
                         </div>
                       </li>

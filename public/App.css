@@ -116,3 +116,16 @@
   display: inline-block;
   margin-right: 12.5px;
 }
+
+div .card-dest{
+  max-width: 150px;
+  padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+div .margin{
+  margin-left: 15%;
+  margin-right: 15%;
+}

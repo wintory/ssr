@@ -10,9 +10,6 @@ export default class App extends React.Component {
     render() {
         return (
             <div>
-              <Nav />
-                <Header/>
-                <StaticBox />
                 {this.props.children}
                 <Footer/>
 

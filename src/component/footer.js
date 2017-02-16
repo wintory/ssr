@@ -6,9 +6,7 @@ export default class Footer extends React.Component {
     render() {
         return (
             <div>
-              <footer>
-
-
+              <footer className="copyRight">
               <div className="copyRight clearfix">
                 <div className="container">
                   <div className="row">
