@@ -14,12 +14,39 @@ module.exports = {
 
     // อ่านไฟล์นามสกุล .js, .jsx ด้วย Babel
     module: {
-        loaders: [
-            {
-                test: /\.jsx?$/ ,
-                exclude: /node_modules/,
-                loader: 'babel-loader'
-            }
-        ]
+      loaders: [
+          {
+              test: /\.jsx?$/ ,
+              exclude: /node_modules/,
+              loaders:  'babel'
+          } ,    {
+            test: /\.(eot|svg|ttf|woff|woff2)$/,
+            loader: 'file-loader',
+          }, {
+            test: /\.(jpg|png|gif)$/,
+            loaders: 'file-loader'
+          },  {
+                 test: /\.(jpe?g|png|gif|svg|woff|woff2|eot|ttf|)$/i,
+                 loader: "file!isomorphic"
+             },
+          { test: /\.css$/,
+            loader: ExtractTextPlugin.extract( {fallbackLoader: 'style-loader',
+          loader: ['css-loader']}),
+        } ,
+
+
+              {
+           test: /\.(png|woff|woff2|eot|ttf|svg|jpg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+           loaders: ['url-loader?limit=100000'],
+         },
+      ]
+  } ,
+
+  plugins: [ new IsomorphicLoaderPlugin({ keepExistingConfig: true }) ,
+    new ExtractTextPlugin({ filename: 'style.css',
+      allChunks: true
+    })
+
+]
     }
 };

@@ -15612,36 +15612,36 @@ var SearchBox = function (_Component) {
                 null,
                 _react2.default.createElement(
                     'div',
-                    { className: 'col-sm-3 col-xs-12' },
+                    { className: 'col-sm-7 col-xs-12' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'searchTour' },
+                        { className: 'col-sm-3 col-xs-12' },
                         _react2.default.createElement(
-                            'select',
-                            { name: 'guiest_id3', id: 'guiest_id3', className: 'select-drop' },
+                            'div',
+                            { className: 'searchTour' },
                             _react2.default.createElement(
-                                'option',
-                                { value: '0' },
+                                'select',
+                                { name: 'guiest_id3', id: 'guiest_id3', className: 'select-drop' },
                                 _react2.default.createElement(
-                                    'p',
-                                    null,
-                                    '$1000 - $2000'
+                                    'option',
+                                    { value: '0' },
+                                    'aaa'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '1' },
+                                    'aaa'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '2' },
+                                    'aaa'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: '3' },
+                                    'aaa'
                                 )
-                            ),
-                            _react2.default.createElement(
-                                'option',
-                                { value: '1' },
-                                '$1400 - $2000'
-                            ),
-                            _react2.default.createElement(
-                                'option',
-                                { value: '2' },
-                                '$1600 - $2000'
-                            ),
-                            _react2.default.createElement(
-                                'option',
-                                { value: '3' },
-                                '$1800 - $2000'
                             )
                         )
                     )
